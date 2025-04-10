@@ -1,0 +1,19 @@
+.light {
+    color-scheme: light;
+    --bg: #A1C6EA;
+    --fg: black;
+    color: var(--fg);
+  }
+   
+  .dark {
+    color-scheme: dark;
+    --bg: #23395B;
+    --fg: white;
+    color: var(--fg);
+  }
+   
+  html {
+    background-color: var(--bg);
+    color: var(--fg);
+    transition: background-color 0.3s ease, color 0.3s ease; 
+  }

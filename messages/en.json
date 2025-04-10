@@ -1,4 +1,10 @@
 {
-	"$schema": "https://inlang.com/schema/inlang-message-format",
-	"hello_world": "Hello, {name} from en!"
-}
+	"nav_home": "Home",
+	"nav_projects": "Projects",
+	"nav_contact": "Contact",
+	"hero_subheading": "Full-Stack and App Developer",
+	"hero_heading": "Hello, my name is Rob Haynes",
+	"hero_description": "A full stack developer and student from South Africa currently based in Manchester studying towards a BSc (Hons) Computer Science",
+	"hero_buttons_contact": "Contact Me",
+	"hero_buttons_download_cv": "Download CV"
+  }
