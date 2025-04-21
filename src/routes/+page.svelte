@@ -1,7 +1,6 @@
 <script>
-    import Navbar from '$lib/components/navbar.svelte';
+	import HeroSection from "$lib/components/home/HeroSection.svelte";
+
 </script>
 
-<div class="min-h-screen">
-    <Navbar/>
-</div>
+<HeroSection/>

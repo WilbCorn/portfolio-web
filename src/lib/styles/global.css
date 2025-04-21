@@ -1,19 +1,40 @@
 .light {
-    color-scheme: light;
-    --bg: #A1C6EA;
-    --fg: black;
-    color: var(--fg);
-  }
+  --theme-mode: light;
+
+  --bg: #C6E8FF;         /* Brighter sky blue (HSL: 210°, 93%, 89%) */
+  --bg-secondary: #D9F0FF; /* Softer blue highlight (HSL: 210°, 90%, 94%) */
+  --fg: #121212;         /* Crisp near-black text */
+
+  --primary-accent: #2962FF; /* Consistent core blue */
+  --secondary-accent: #4FC3F7; /* Bright cyan accent */
+  
+  --success-accent: #28A745; /* Standard success green */
+  --muted: #6C757D;        /* Neutral gray */
+  --surface: #FFFFFF;       /* Pure white for surfaces */
+}
    
-  .dark {
-    color-scheme: dark;
-    --bg: #23395B;
-    --fg: white;
-    color: var(--fg);
-  }
-   
-  html {
-    background-color: var(--bg);
-    color: var(--fg);
-    transition: background-color 0.3s ease, color 0.3s ease; 
-  }
+.dark {
+  --theme-mode: dark;
+
+  --bg: #1A1F2C;         /* Deep navy blue background */
+  --bg-secondary: #252D40; /* Secondary background: Mid-dark blue */
+  --fg: #E0E0E0;         /* Soft white for primary text */
+
+  --primary-accent: #2962FF; /* Bright blue for key elements */
+  --secondary-accent: #4FC3F7; /* Cyan-blue for secondary elements */
+
+  --success-accent: #28A745; /* Standard success green */
+  --muted: #6C757D;        /* Cool gray for muted elements */
+  --surface: #2C344A;       /* Mid-dark blue for surfaces */
+}
+  
+html {
+  background-color: var(--bg);
+  color: var(--fg);
+
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.selected-span {
+  background-color: var(--fg);
+}

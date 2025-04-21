@@ -2,9 +2,10 @@
 	"nav_home": "Home",
 	"nav_projects": "Projects",
 	"nav_contact": "Contact",
-	"hero_subheading": "Full-Stack and App Developer",
-	"hero_heading": "Hello, my name is Rob Haynes",
-	"hero_description": "A full stack developer and student from South Africa currently based in Manchester studying towards a BSc (Hons) Computer Science",
+
+	"hero_subheading": "Full-Stack Developer",
+	"hero_heading": "Wilbert Cornelius",
+	"hero_description": "A full stack developer and a student from Indonesia currently studying towards a BSc (Hons) Software Engineer in Malaysia",
 	"hero_buttons_contact": "Contact Me",
 	"hero_buttons_download_cv": "Download CV"
   }
