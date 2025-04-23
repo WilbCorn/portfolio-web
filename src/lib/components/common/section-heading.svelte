@@ -1,7 +1,7 @@
 <script lang="ts">
   export let text: string;
 
-  export let headingClass = 'text-4xl font-bold text-center text-[var(--secondary-accent)] text-center';
+  export let headingClass = 'text-4xl font-bold text-center text-center';
 
   export let divClass = 'flex flex-col items-center justify-center w-full pb-8';
 

@@ -21,7 +21,7 @@
 							id="sw-js-blob-svg"
 							viewBox="0 0 100 100"
 							xmlns="http://www.w3.org/2000/svg"
-							class="h-[120%] w-[120%]"
+							class="h-[130%] w-[130%]"
 							style="position: absolute; top: 55%; left: 45%; transform: translate(-50%, -50%); pointer-events: none;"
 						>
 							<defs>

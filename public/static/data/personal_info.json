@@ -1,0 +1,15 @@
+{
+    "name": "Wilbert Cornelius",
+    "telp_no": "+(60)149666223",
+    "location": {
+        "country": "Malaysia",
+        "address": {
+            "street": "Jalan Teknologi 5",
+            "area": "Taman Teknologi Malaysia",
+            "postcode": "57000",
+            "city": "Kuala Lumpur",
+            "state": "Wilayah Persekutuan Kuala Lumpur"
+          }
+    },
+    "email_address": "wilbcorn@gmail.com"
+}

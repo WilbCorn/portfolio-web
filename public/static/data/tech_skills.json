@@ -1,0 +1,142 @@
+[
+    {
+        "category": "Programming Languages",
+        "skills": [
+            {
+                "name": "Java",
+                "years_of_experience": "",
+                "proficiency": "",
+                "last_used": ""
+            },
+            {
+                "name": "Python",
+                "years_of_experience": "",
+                "proficiency": "Intermediate",
+                "last_used": ""
+            },
+            {
+                "name": "R",
+                "years_of_experience": "",
+                "proficiency": "",
+                "last_used": ""
+            },
+            {
+                "name": "C++",
+                "years_of_experience": "",
+                "proficiency": "",
+                "last_used": ""
+            },
+            {
+                "name": "MSSQL",
+                "years_of_experience": "",
+                "proficiency": "",
+                "last_used": ""
+            },
+            {
+                "name": "C++",
+                "years_of_experience": "",
+                "proficiency": "",
+                "last_used": ""
+            },
+            {
+                "name": "Networking",
+                "years_of_experience": "",
+                "proficiency": "",
+                "last_used": ""
+            },
+            {
+                "name": "HTML & CSS",
+                "years_of_experience": "",
+                "proficiency": "",
+                "last_used": ""
+            },
+            {
+                "name": "JavaScript",
+                "years_of_experience": "",
+                "proficiency": "",
+                "last_used": ""
+            },
+            {
+                "name": "TypeScript",
+                "years_of_experience": "",
+                "proficiency": "",
+                "last_used": ""
+            },
+            {
+                "name": "Dart",
+                "years_of_experience": "",
+                "proficiency": "",
+                "last_used": ""
+            }
+        ]
+    },
+    {
+        "category": "Frameworks",
+        "skills": [
+            {
+                "name": "Next.js",
+                "years_of_experience": "",
+                "proficiency": "",
+                "last_used": ""
+            },
+            {
+                "name": "Angular",
+                "years_of_experience": "",
+                "proficiency": "",
+                "last_used": ""
+            },
+            {
+                "name": "Django",
+                "years_of_experience": "",
+                "proficiency": "",
+                "last_used": ""
+            },
+            {
+                "name": "Flutter",
+                "years_of_experience": "",
+                "proficiency": "",
+                "last_used": ""
+            },
+            {
+                "name": "Expo",
+                "years_of_experience": "",
+                "proficiency": "",
+                "last_used": ""
+            },
+            {
+                "name": "React Native",
+                "years_of_experience": "",
+                "proficiency": "",
+                "last_used": ""
+            }
+        ]
+    },
+    {
+        "category": "Tools",
+        "skills": [
+            {
+                "name": "Figma",
+                "years_of_experience": "",
+                "proficiency": "",
+                "last_used": ""
+            },
+            {
+                "name": "Git",
+                "years_of_experience": "",
+                "proficiency": "",
+                "last_used": ""
+            }
+        ]
+    },
+    {
+        "category": "Cloud",
+        "skills": [
+            {
+                "name": "Firebase",
+                "years_of_experience": "",
+                "proficiency": "",
+                "last_used": ""
+            }
+        ]
+    }
+]

@@ -1,0 +1,27 @@
+[
+    {
+        "name": "English",
+        "expertise": "Full Professional Proficiency",
+        "certification": [
+            {
+                "name": "IELTS",
+                "score": "7.0"
+            }
+        ]
+    },
+    {
+        "name": "Mandarin",
+        "expertise": "Novice",
+        "certification": []
+    },
+    {
+        "name": "Bahasa Indonesia",
+        "expertise": "Native",
+        "certification": []
+    },
+    {
+        "name": "Malaysian",
+        "expertise": "Professional Working Proficiency",
+        "certification": []
+    }
+]

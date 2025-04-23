@@ -1,7 +1,7 @@
 <script>
 	import SectionHeading from "$lib/components/common/section-heading.svelte";
 	import Tabs from "../../common/tabs.svelte";
-    import Bio from "./Bio.svelte";
+    import Bio from "./bio.svelte";
 
     // Outer variables
 

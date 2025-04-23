@@ -1,0 +1,19 @@
+[
+    {
+        "name": "Bachelor of Science (B.S.) in Software Engineering",
+        "location": {
+            "school": "Asia Pacific University",
+            "country": "Kuala Lumpur",
+            "town": "Kuala Lumpur"
+        },
+        "start": "2022",
+        "end": "2025",
+        "achievements": [
+            {
+                "name": "Vice Chancellor's List",
+                "start": "2022",
+                "end": "2023"
+            }
+        ]
+    }
+]
