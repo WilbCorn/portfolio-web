@@ -6,7 +6,7 @@
   --fg: #121212;         /* Crisp near-black text */
 
   --primary-accent: #2962FF; /* Consistent core blue */
-  --secondary-accent: #4FC3F7; /* Bright cyan accent */
+  --secondary-accent: #00B0FF; /* Bright cyan accent */
   
   --success-accent: #28A745; /* Standard success green */
   --muted: #6C757D;        /* Neutral gray */
@@ -21,7 +21,7 @@
   --fg: #E0E0E0;         /* Soft white for primary text */
 
   --primary-accent: #2962FF; /* Bright blue for key elements */
-  --secondary-accent: #4FC3F7; /* Cyan-blue for secondary elements */
+  --secondary-accent: #00B0FF; /* Cyan-blue for secondary elements */
 
   --success-accent: #28A745; /* Standard success green */
   --muted: #6C757D;        /* Cool gray for muted elements */
