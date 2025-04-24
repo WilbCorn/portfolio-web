@@ -8,3 +8,4 @@
 <HeroSection/>
 <SeparatorWavy color="var(--bg-secondary)" spacing=50 />
 <AboutMeSection/>
+<SeparatorWavy color="var(--bg-secondary)" flipped={true} />

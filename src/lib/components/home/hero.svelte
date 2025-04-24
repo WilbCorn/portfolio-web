@@ -20,6 +20,14 @@
 			isSvgFinished = true;
 		}, SVG_DURATION);
 	});
+
+	function handleContactClick() {
+        const subject = "Contact from Portfolio Website";
+        const body = "Hello,\n\nI'd like to get in touch with you regarding...";
+        
+        const mailtoLink = `mailto:${links.email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+        window.open(mailtoLink, '_blank');
+    }
 </script>
 
 <div class="flex w-full items-start justify-center p-4">
@@ -108,7 +116,7 @@
 						/>
 					</div>
 					<div class="justify flex flex-row items-end space-x-5 pt-4">
-						<ButtonIcon icon={Send} onclick={() => {}} buttonText={m.hero_buttons_contact()} />
+						<ButtonIcon icon={Send} onclick={handleContactClick} buttonText={m.hero_buttons_contact()} />
 						<ButtonIcon icon={Download} onclick={() => {}} buttonText={m.hero_buttons_download_cv()} />
 					</div>
 				</div>

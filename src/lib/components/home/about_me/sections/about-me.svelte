@@ -41,7 +41,7 @@
 
 </script>
 
-<div class="flex flex-col w-full items-start justify-center p-4" style="background-color: {bg_color}">
+<div class="flex flex-col w-full items-start justify-center p-4 pb-10" style="background-color: {bg_color}">
 
     <SectionHeading text="About Me"/>
 
