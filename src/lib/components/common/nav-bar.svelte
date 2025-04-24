@@ -6,6 +6,7 @@
 	import { page } from '$app/state';
 	import { ModeWatcher, toggleMode, userPrefersMode } from 'mode-watcher';
 	import { writable } from 'svelte/store';
+	import { fade, slide } from 'svelte/transition';
 
 	import '$lib/styles/global.css';
 	import { onMount } from 'svelte';
@@ -89,18 +90,34 @@
 			<div class="flex flex-col items-center pt-20 space-y-8">
 				<!-- Navigation Links -->
 				<ul class="flex flex-col items-center space-y-6">
-					{#each navItems as { href, label }}
-						<li class="relative">
+					{#each navItems as { href, label }, i}
+						<li class="relative group"
+							in:fade={{ duration: 200, delay: i * 100 }}>
 							<a 
 								{href} 
-								class="hover:text-primary font-bold text-lg"
+								class="font-bold text-lg relative py-1
+									   {page.url.pathname === href ? 
+									   'text-[var(--primary-accent)]' : 
+									   'hover:text-[var(--secondary-accent)]'}
+									   transition-all duration-300 ease-in-out
+									   hover:scale-105 transform-gpu"
 								on:click={toggleMobileMenu}
 							>
 								{label()}
+								<!-- Hover underline -->
+								<span class="absolute bottom-0 left-0 w-0 h-0.5 bg-[var(--secondary-accent)]
+										   transition-all duration-300 ease-out group-hover:w-full
+										   {page.url.pathname === href ? 'opacity-0' : 'opacity-100'}">
+								</span>
+								<!-- Active underline -->
+								{#if page.url.pathname === href}
+									<span 
+										class="absolute bottom-0 left-0 h-0.5 w-full
+											   bg-[var(--primary-accent)]"
+										in:slide={{ duration: 300, axis: 'x' }}
+									></span>
+								{/if}
 							</a>
-							{#if page.url.pathname === href}
-								<span class="selected-span absolute bottom-[-4px] left-0 h-[2px] w-full rounded-4xl"></span>
-							{/if}
 						</li>
 					{/each}
 				</ul>
@@ -127,11 +144,30 @@
 		<!-- Navigation Links -->
 		<ul class="flex space-x-8 z-20">
 			{#each navItems as { href, label }}
-				<li class="relative">
-					<a {href} class="hover:text-primary font-bold">{label()}</a>
-					{#if page.url.pathname === href}
-						<span class="selected-span absolute bottom-[-4px] left-0 h-[2px] w-full rounded-4xl"></span>
-					{/if}
+				<li class="relative group">
+					<a 
+						{href} 
+						class="font-bold relative py-1
+							   {page.url.pathname === href ? 
+							   'text-[var(--primary-accent)]' : 
+							   'hover:text-[var(--secondary-accent)]'}
+							   transition-colors duration-300 ease-in-out"
+					>
+						{label()}
+						<!-- Hover underline -->
+						<span class="absolute bottom-0 left-0 w-0 h-0.5 bg-[var(--secondary-accent)]
+								   transition-all duration-300 ease-out group-hover:w-full
+								   {page.url.pathname === href ? 'opacity-0' : 'opacity-100'}">
+						</span>
+						<!-- Active underline -->
+						{#if page.url.pathname === href}
+							<span 
+								class="absolute bottom-0 left-0 h-0.5 w-full
+									   bg-[var(--primary-accent)]"
+								in:slide={{ duration: 300, axis: 'x' }}
+							></span>
+						{/if}
+					</a>
 				</li>
 			{/each}
 		</ul>
@@ -152,3 +188,32 @@
 		</div>
 	</div>
 </nav>
+
+<style>
+	.group {
+		perspective: 1000px;
+	}
+
+	.group:hover a {
+		text-shadow: 0 0 10px rgba(var(--secondary-accent-rgb), 0.3);
+	}
+
+	.selected-span {
+		box-shadow: 0 0 8px rgba(var(--primary-accent-rgb), 0.3);
+	}
+
+	@keyframes fadeIn {
+		from {
+			opacity: 0;
+			transform: translateY(-10px);
+		}
+		to {
+			opacity: 1;
+			transform: translateY(0);
+		}
+	}
+
+	li {
+		animation: fadeIn 0.5s ease-out forwards;
+	}
+</style>

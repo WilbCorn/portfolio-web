@@ -1,6 +1,7 @@
 <script>
-    import IconText from "$lib/components/home/AboutMe/icon-text.svelte";
+    import IconText from "$lib/components/home/about_me/icon-text.svelte";
     import { User, Briefcase } from "@lucide/svelte";
+	import { m } from '$lib/paraglide/messages.js';
 </script>
 
 <!-- <div class="grid grid-cols-2 grid-rows-3 gap-8 mb-12">
@@ -16,6 +17,6 @@
 
 <div>
     <p>
-        Hi! I am Wilbert, a passionate university student with a strong interest in software development.
+        {m.abm_bio()}
     </p>
 </div>

@@ -11,6 +11,7 @@
   --success-accent: #28A745; /* Standard success green */
   --muted: #6C757D;        /* Neutral gray */
   --surface: #FFFFFF;       /* Pure white for surfaces */
+  --gold: #ff9d00;        /* Gold for highlights */
 }
    
 .dark {
@@ -26,6 +27,7 @@
   --success-accent: #28A745; /* Standard success green */
   --muted: #6C757D;        /* Cool gray for muted elements */
   --surface: #2C344A;       /* Mid-dark blue for surfaces */
+  --gold: #FFD700;        /* Gold for highlights */
 }
   
 html {

@@ -1,9 +1,25 @@
-<script>
+<script lang="ts">
 	import { m } from '$lib/paraglide/messages.js';
 	import ButtonIcon from '$lib/components/common/button-icon.svelte';
 	import { GithubIcon, LinkedinIcon, Download, Send } from '@lucide/svelte';
-
 	import { links } from '../../../config';
+	import { onMount } from 'svelte';
+	import { fade, draw } from 'svelte/transition';
+
+	let path: SVGPathElement;
+	let isVisible = false;
+	let isSvgFinished = false;
+
+	// Increase duration to account for all animations
+	const SVG_DURATION = 3000; // 2000ms draw + 1000ms fill
+
+	onMount(() => {
+		isVisible = true;
+		// Wait for SVG animation to complete before showing image
+		setTimeout(() => {
+			isSvgFinished = true;
+		}, SVG_DURATION);
+	});
 </script>
 
 <div class="flex w-full items-start justify-center p-4">
@@ -16,7 +32,9 @@
 					class="relative mb-4 aspect-[3/4] w-[320px] sm:w-[360px] md:w-[400px] lg:w-[450px] xl:w-[500px]"
 				>
 					<!-- SVG Blob -->
-					<div class="absolute inset-0 z-0 h-full w-full overflow-visible">
+					{#if isVisible}
+					<div class="absolute inset-0 z-0 h-full w-full overflow-visible"
+						transition:fade={{ duration: 1000, delay: 300 }}>
 						<svg
 							id="sw-js-blob-svg"
 							viewBox="0 0 100 100"
@@ -34,25 +52,31 @@
 							</defs>
 							<path
 								fill="url(#sw-gradient)"
-								d="M24,-11.3C30.4,-2.8,34.4,9.6,29.9,17.4C25.5,
-                25.2,12.8,28.3,2.6,26.8C-7.6,25.4,-15.3,19.3,
-              -19.6,11.6C-23.9,3.8,-24.9,-5.5,-21.1,-12.5C-17.2,
-              -19.5,-8.6,-24,0.1,-24.1C8.8,-24.2,17.6,-19.7,24,-11.3Z"
-								width="100%"
-								height="100%"
+								fill-opacity="0"
+								stroke="url(#sw-gradient)"
+								stroke-width="1"
+								d="M24,-11.3C30.4,-2.8,34.4,9.6,29.9,17.4C25.5,25.2,12.8,28.3,2.6,26.8C-7.6,25.4,-15.3,19.3,-19.6,11.6C-23.9,3.8,-24.9,-5.5,-21.1,-12.5C-17.2,-19.5,-8.6,-24,0.1,-24.1C8.8,-24.2,17.6,-19.7,24,-11.3Z"
 								transform="translate(50 50)"
-								stroke-width="0"
-							></path>
+								class="animate-draw"
+							/>
 						</svg>
 					</div>
 
 					<!-- Profile Image -->
-					<img
-						src="/public/static/img/profile.png"
-						alt="Profile"
-						class="relative z-10 h-full w-full object-cover"
-						style="pointer-events: none;"
-					/>
+					{#if isSvgFinished}
+					<div 
+						class="relative z-10 h-full w-full"
+						transition:fade={{ duration: 1000 }}
+					>
+						<img
+							src="/public/static/img/profile.png"
+							alt="Profile"
+							class="h-full w-full object-cover animate-fadeIn"
+							style="pointer-events: none;"
+						/>
+					</div>
+					{/if}
+					{/if}
 				</div>
 			</div>
 
@@ -92,3 +116,42 @@
 		</div>
 	</div>
 </div>
+
+<style>
+	.animate-draw {
+		animation: drawPath 2s ease forwards, 
+				   fillPath 1s ease-in-out forwards 2s;
+	}
+
+	@keyframes drawPath {
+		from {
+			stroke-dasharray: 1000;
+			stroke-dashoffset: 1000;
+		}
+		to {
+			stroke-dashoffset: 0;
+		}
+	}
+
+	@keyframes fillPath {
+		from {
+			fill-opacity: 0;
+		}
+		to {
+			fill-opacity: 1;
+		}
+	}
+
+	.animate-fadeIn {
+		opacity: 0;
+		transform: scale(0.95);
+		animation: fadeIn 1s ease-out forwards;
+	}
+
+	@keyframes fadeIn {
+		to {
+			opacity: 1;
+			transform: scale(1);
+		}
+	}
+</style>

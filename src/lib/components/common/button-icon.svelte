@@ -18,7 +18,7 @@
     export let onclick = () => {};
 </script>
 
-<button class="{styleClass}" on:click={onclick}>
+<button class="{styleClass} transition-all duration-300 ease-in-out hover:scale-105" on:click={onclick}>
     {#if icon}
     <svelte:component this={icon} class="{iconClass}"/>
     {/if}
