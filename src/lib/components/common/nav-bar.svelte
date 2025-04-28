@@ -198,9 +198,6 @@
 		text-shadow: 0 0 10px rgba(var(--secondary-accent-rgb), 0.3);
 	}
 
-	.selected-span {
-		box-shadow: 0 0 8px rgba(var(--primary-accent-rgb), 0.3);
-	}
 
 	@keyframes fadeIn {
 		from {

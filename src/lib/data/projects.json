@@ -1,12 +1,75 @@
 [
     {
-        "name": "",
-        "description": "",
-        "achievements": [],
-        "year": "",
+        "name": "J.I.M",
+        "description": "Fitness-Oriented Chatbot designed to assist users in selecting appropriate exercises, warm-ups, and providing health-related information.",
+        "achievements": [
+            "Contributed in achieving GPA of 4.0 in Introduction to Artificial Intelligence module.",
+            "Achieved a 94.4% success rate in providing users with helpful and relevant information.",
+            "Assisted users in selecting exercises and warm-ups to target specific muscle groups.",
+            "Responded to health-related inquiries with accurate and reliable information."
+        ],
+        "year": "2023",
         "duration": "",
-        "soft_skills_utilized": [],
-        "hard_skills_utilized": []
+        "link": "",
+        "soft_skills_utilized": [
+            "Problem-solving",
+            "Communication",
+            "Teamwork"
+        ],
+        "hard_skills_utilized": [
+            "Google Dialogflow",
+            "Knowledge Base Creation",
+            "Artificial Intelligence"
+        ]
+    },
+    {
+        "name": "APU Programming Cafe",
+        "description": "Coaching Class Application for Programming that includes user registration, deletion, and SQL database management.",
+        "achievements": [
+            "Contributed in achieving GPA of 3.7 in Introduction to Object Oriented Programming module using C#.",
+            "Designed and implemented the Administrator role within the application.",
+            "Enabled user registration and deletion for efficient management.",
+            "Designed and optimized SQL database schemas.",
+            "Implemented queries for data retrieval and manipulation."
+        ],
+        "year": "2023",
+        "duration": "",
+        "link": "",
+        "soft_skills_utilized": [
+            "Collaboration",
+            "Problem-solving",
+            "Time Management"
+        ],
+        "hard_skills_utilized": [
+            "C# Programming",
+            "SQL Database Design",
+            "Object-Oriented Programming"
+        ]
+    },
+    {
+        "name": "Food Ordering System",
+        "description": "An online food ordering system that allows customers to browse and place orders for various food types through multiple vendors.",
+        "achievements": [
+            "Contributed in achieving GPA of 3.7 in Object Oriented Development with Java module.",
+            "Developed an efficient online food ordering system.",
+            "Integrated notifications using text files to keep users informed about their order status.",
+            "Created a user registration process for new users.",
+            "Utilized text files for efficient data storage and management.",
+            "Collaborated effectively with team members using GitHub and Git for version control."
+        ],
+        "year": "2023",
+        "duration": "",
+        "link": "",
+        "soft_skills_utilized": [
+            "Teamwork",
+            "Adaptability",
+            "Communication"
+        ],
+        "hard_skills_utilized": [
+            "Java Programming",
+            "GitHub/Git Version Control",
+            "Text File Data Management"
+        ]
     },
     {
         "name": "",
@@ -14,24 +77,7 @@
         "achievements": [],
         "year": "",
         "duration": "",
-        "soft_skills_utilized": [],
-        "hard_skills_utilized": []
-    },
-    {
-        "name": "",
-        "description": "",
-        "achievements": [],
-        "year": "",
-        "duration": "",
-        "soft_skills_utilized": [],
-        "hard_skills_utilized": []
-    },
-    {
-        "name": "",
-        "description": "",
-        "achievements": [],
-        "year": "",
-        "duration": "",
+        "link": "",
         "soft_skills_utilized": [],
         "hard_skills_utilized": []
     }
