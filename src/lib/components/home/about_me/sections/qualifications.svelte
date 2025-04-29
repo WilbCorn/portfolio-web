@@ -3,9 +3,11 @@
     import { GraduationCap, Award, Medal, Building2, MapPin, Calendar } from '@lucide/svelte';
     import education from '$lib/data/education.json';
     import certification from '$lib/data/certification.json';
+
+    export let bg_color = "var(--bg)";
 </script>
 
-<div class="flex w-full flex-col gap-6 p-6">
+<div class="flex w-full flex-col gap-6 p-6 bg-[{bg_color}]">
     <!-- Education Section -->
     <div class="w-full border-b-2 border-[var(--fg)] pb-4">
         <IconText
@@ -18,7 +20,7 @@
 
     <div class="grid gap-6 md:grid-cols-1">
         {#each education as edu}
-            <div class="group rounded-lg bg-[var(--bg-secondary)] p-6 transition-all duration-300
+            <div class="group rounded-lg bg-[{bg_color}] p-6 transition-all duration-300
                         hover:shadow-[0_0_10px_-3px_var(--fg)]">
                 <div class="flex flex-col space-y-4">
                     <h3 class="text-xl font-bold text-[var(--accent)]">{edu.name}</h3>
@@ -66,9 +68,9 @@
         />
     </div>
 
-    <div class="grid gap-4 sm:grid-cols-2 md:grid-cols-3">
+    <div class="grid gap-4 sm:grid-cols-2 md:grid-cols-3 ">
         {#each certification as cert}
-            <div class="group flex flex-col rounded-lg bg-[var(--bg-secondary)] p-4
+            <div class="group flex flex-col rounded-lg bg-[{bg_color} p-4
                         transition-all duration-300 hover:scale-[1.02] hover:shadow-[0_0_10px_-3px_var(--fg)]">
                 <div class="flex items-start justify-between">
                     <div class="flex-1">

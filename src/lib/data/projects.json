@@ -20,6 +20,8 @@
             "Google Dialogflow",
             "Knowledge Base Creation",
             "Artificial Intelligence"
+        ],
+        "images": [
         ]
     },
     {
@@ -70,6 +72,42 @@
             "GitHub/Git Version Control",
             "Text File Data Management"
         ]
+    },
+    {
+        "name": "Personal Portfolio Website (This Website!)",
+        "description": "A dynamic and responsive personal website built with SvelteKit and Tailwind CSS to showcase skills, projects, and professional experience. Features seamless light/dark theme switching and engaging animations.",
+        "achievements": [
+            "Developed a fully responsive design ensuring optimal viewing on all devices.",
+            "Integrated seamless light/dark mode theme switching using Mode Watcher.",
+            "Built with SvelteKit for a high-performance, modern web experience.",
+            "Utilized Tailwind CSS for efficient, utility-first styling.",
+            "Implemented smooth scrolling and scroll-triggered animations using Intersection Observer.",
+            "Created reusable Svelte components for maintainability and consistency.",
+            "Deployed via Vercel for continuous integration and delivery."
+        ],
+        "year": "2024",
+        "duration": "Ongoing",
+        "link": "https://wilbcorn.vercel.app/",
+        "soft_skills_utilized": [
+            "Project Management",
+            "UI/UX Design",
+            "Problem-solving",
+            "Self-learning",
+            "Attention to Detail"
+        ],
+        "hard_skills_utilized": [
+            "SvelteKit",
+            "TypeScript",
+            "Tailwind CSS",
+            "Mode Watcher",
+            "Vite",
+            "HTML",
+            "CSS",
+            "Git",
+            "GitHub",
+            "Intersection Observer API"
+        ],
+        "images": []
     },
     {
         "name": "",

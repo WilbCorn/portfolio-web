@@ -1,6 +1,5 @@
 <script>
 	import IconText from '$lib/components/home/about_me/icon-text.svelte';
-	import { m } from '$lib/paraglide/messages.js';
 
 	import { Computer, ThumbsUp, CheckCircle2, Speech, Languages, Award } from '@lucide/svelte';
 

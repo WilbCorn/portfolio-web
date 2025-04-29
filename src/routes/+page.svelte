@@ -7,9 +7,23 @@
 
 </script>
 
-<HeroSection/>
+<div id="home">
+    <HeroSection/>
+</div>
+
 <SeparatorWavy color="var(--bg-secondary)" spacing=50 />
-<AboutMeSection/>
-<SeparatorWavy color="var(--bg-secondary)" flipped={true} />
-<ProjectSection/>
-<Footer/>
+<div id="about">
+    <AboutMeSection/>
+	<SeparatorWavy color="var(--bg-secondary)" flipped={false} />
+</div>
+
+<div id="projects">
+    <ProjectSection bg_color="var(--bg-secondary)"/>
+	<SeparatorWavy color="var(--bg-secondary)" flipped={true}/>
+</div>
+
+
+<div id="contact">
+    <Footer bg_color="var(--bg)"/>
+</div>
+

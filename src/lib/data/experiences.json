@@ -1,50 +1,145 @@
 [
     {
         "name": "HackInsan",
-        "role": "Winner",
-        "organization": "",
+        "role": "Winner (3rd Place Overall, 1st Place Pemuda GEMA Category)",
+        "organization": "Permata Insan",
         "contribution": [
-            ""
+            "Developed PemTeach, a teacher support tool to enhance volunteer teachers' capabilities.",
+            "Focused on cultural insights and personalized teaching methods.",
+            "Delivered an innovative solution using Flutter as part of the TryHards team."
         ],
-        "year": "",
-        "duration": "",
-        "soft_skills_utilized": [],
-        "hard_skills_utilized": []
+        "year": "2024",
+        "duration": "24 hours",
+        "soft_skills_utilized": [
+            "Teamwork",
+            "Problem-solving",
+            "Communication",
+            "Adaptability",
+            "Constructive critique",
+            "Business acumen",
+            "Networking",
+            "Time Management"
+        ],
+        "hard_skills_utilized": [
+            "Flutter",
+            "Mobile App Engineering",
+            "AI (for insights)",
+            "Gamification Design"
+        ],
+        "links": [
+            {
+                "name": "APU News Article",
+                "url": "https://www.apu.edu.my/news/team-tryhards-shines-hackinsan-2024-innovative-pemteach-app"
+            },
+            {
+                "name": "HackInsan 2024 - Instagram Post 1",
+                "url": "https://www.instagram.com/p/C9U52VVyuLF/?igsh=NmtzY3p1NTY1d3Fn"
+            },
+            {
+                "name": "HackInsan 2024 - Instagram Post 2",
+                "url": "https://www.instagram.com/p/C9U5uTQS3WY/?igsh=MWJwdnM1bjdwaHA0NA=="
+            }
+        ]
     },
     {
-        "name": "GCPBoleh",
-        "role": "Participant",
-        "organization": "Google Developer Groups",
+        "name": "GCPBoleh Cloud Challenge (Season 5)",
+        "role": "Participant (Completed Challenge & Earned Badges)",
+        "organization": "Google Developer Groups (GDG Cloud KL) / Google Cloud",
         "contribution": [
-            ""
+            "Completed the online self-study program focused on Google Cloud technologies.",
+            "Earned multiple Google Cloud skill badges through hands-on labs on Cloud Skills Boost.",
+            "Demonstrated proficiency in areas such as Foundational Infrastructure Tasks, Data/ML/AI Tasks, Secure Networks, Terraform, and Vertex AI based on earned badges.",
+            "Gained hands-on experience in creating and managing cloud resources, automating infrastructure, and deploying applications.",
+            "Delved into extracting insights from large datasets using BigQuery, applying machine learning techniques, and building models with TensorFlow.",
+            "Developed serverless applications using Firebase, including authentication, database management, storage, and hosting.",
+            "Engaged in a Google Cloud challenge focused on bracketology and data analysis for NCAA® March Madness®."
+        ],
+        "year": "2023",
+        "duration": "1 month",
+        "soft_skills_utilized": [
+            "Self-learning",
+            "Time Management",
+            "Persistence",
+            "Continuous Learning"
+        ],
+        "hard_skills_utilized": [
+            "Google Cloud Platform (GCP)",
+            "Cloud Skills Boost (Qwiklabs)",
+            "Vertex AI",
+            "Google Cloud Networking",
+            "Google Cloud IAM",
+            "Terraform",
+            "BigQuery",
+            "Cloud Storage",
+            "Compute Engine",
+            "Firebase",
+            "TensorFlow",
+            "Machine Learning"
+        ],
+        "links": [
+            
+            {
+                "name": "Google Cloud Skill Badges",
+                "url": "https://www.cloudskillsboost.google/public_profiles/954ec3c4-8d37-4579-a7e3-a8fc44e26914"
+            }
+        ]
+    },
+    {
+        "name": "H2O Splashmania",
+        "role": "Co-Leader",
+        "organization": "University Co-Curricular Activity",
+        "contribution": [
+            "Coordinate seamless event execution through meticulous planning and strategic oversight.",
+            "Lead and inspire teams, ensuring collaborative dynamics and optimal productivity.",
+            "Actively contribute to decision-making processes for overall event success.",
+            "Maintain strong communication with stakeholders to ensure effective coordination.",
+            "Demonstrate flexibility in managing unexpected challenges during events."
         ],
         "year": "2023",
         "duration": "",
-        "soft_skills_utilized": [],
-        "hard_skills_utilized": []
+        "soft_skills_utilized": [
+            "Leadership",
+            "Teamwork",
+            "Planning",
+            "Communication",
+            "Problem-solving",
+            "Decision-making",
+            "Adaptability"
+        ],
+        "hard_skills_utilized": [],
+        "links": []
     },
     {
-        "name": "",
-        "role": "",
-        "organization": "",
+        "name": "Lazada ASBX Business Challenge",
+        "role": "Participant",
+        "organization": "Lazada Malaysia x APU (Asia Pacific University of Technology and Innovation)",
         "contribution": [
-            ""
+            "Thoroughly analyze and identify complex problems in alignment with Design Thinking principles.",
+            "Propose creative and innovative solutions to address identified problem statements.",
+            "Apply relevant tools and techniques to assess feasibility and potential benefits of proposed solutions.",
+            "Craft and deliver effective oral presentations, demonstrating clarity and persuasiveness.",
+            "Actively contribute to collaborative team efforts, showcasing effective teamwork and participation.",
+            "Tackled real-life industry challenges related to eCommerce entrepreneurship, omnichannel ecosystems, and marketing.",
+            "Learned lessons on resilience, collaboration, and adaptability."
         ],
-        "year": "",
-        "duration": "",
-        "soft_skills_utilized": [],
-        "hard_skills_utilized": []
-    },
-    {
-        "name": "",
-        "role": "",
-        "organization": "",
-        "contribution": [
-            ""
+        "year": "2023",
+        "duration": "2 months",
+        "soft_skills_utilized": [
+            "Resilience",
+            "Collaboration",
+            "Adaptability",
+            "Teamwork",
+            "Communication",
+            "Problem-solving",
+            "Design Thinking",
+            "Presentation Skills"
         ],
-        "year": "",
-        "duration": "",
-        "soft_skills_utilized": [],
-        "hard_skills_utilized": []
+        "hard_skills_utilized": [],
+        "links": [
+            {
+                "name": "APU News Article",
+                "url": "https://www.apu.edu.my/news/lazada-x-apu-asbx-business-challenge-empowers-young-innovators-and-next-generation#:~:text=Lazada%20Malaysia%20x%20ASBX%20Business%20Challenge%20is,the%20Enterprise@APU%20programme%20called%20ASBX%20(APU%20SandBox)."
+            }
+        ]
     }
 ]

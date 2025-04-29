@@ -2,9 +2,11 @@
     import { Phone, Mail, MapPin, Github, Linkedin } from '@lucide/svelte';
     import { links } from '../../config';
     import personalInfo from '$lib/data/personal_info.json';
+
+    export let bg_color = "var(--bg)";
 </script>
 
-<footer class="w-full bg-[var(--bg-secondary)] py-8 mt-auto">
+<footer class="w-full bg-[{bg_color}] py-8 mt-auto">
     <div class="container mx-auto px-4">
         <div class="flex flex-col md:flex-row justify-between items-center gap-8">
             <!-- Contact Info -->

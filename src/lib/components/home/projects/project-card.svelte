@@ -1,20 +1,43 @@
 <script lang="ts">
     import { Calendar, Award, CornerRightUp } from '@lucide/svelte';
-    
+    import ProjectDetails from './project-details.svelte';
+
     export let project: {
         name: string;
         description: string;
         achievements: string[];
         year: string;
         duration: string;
+        link: string;
         soft_skills_utilized: string[];
         hard_skills_utilized: string[];
+        images?: string[];
     };
+
+    export let bg_color = "var(--bg)";
+
+    let showDetails = false;
+
+    function handleInteraction() {
+        showDetails = true;
+    }
+
+    function handleKeydown(event: KeyboardEvent) {
+        if (event.key === 'Enter' || event.key === ' ') {
+            event.preventDefault();
+            handleInteraction();
+        }
+    }
 </script>
 
-<div class="group relative overflow-hidden rounded-xl bg-[var(--bg-secondary)] p-6 
+<div class="group relative overflow-hidden rounded-xl bg-[{bg_color}] p-6 
             cursor-pointer transition-all duration-300 hover:-translate-y-1 
-            hover:shadow-[0_0_10px_-3px_var(--fg)]">
+            hover:shadow-[0_0_10px_-3px_var(--fg)]"
+     on:click={handleInteraction}
+     on:keydown={handleKeydown}
+     role="button"
+     tabindex="0"
+     aria-label="View details of {project.name}">
     <!-- Corner Peek Effect -->
     <div class="absolute -right-12 -top-12 h-24 w-24 rotate-45 
                 transition-all duration-300 bg-[var(--primary-accent)] opacity-0 
@@ -50,13 +73,14 @@
         <!-- Skills Tags -->
         <div class="flex flex-wrap gap-2">
             {#each project.hard_skills_utilized.slice(0, 3) as skill}
-                <span class="rounded-full bg-[var(--accent)] bg-opacity-10 px-3 py-1 
-                           text-xs font-medium text-[var(--accent)]">
+                <span class="rounded-full bg-[var(--primary-accent)] bg-opacity-10 px-3 py-1 
+                           text-xs font-medium text-white">
                     {skill}
                 </span>
             {/each}
             {#if project.hard_skills_utilized.length > 3}
-                <span class="text-xs text-[var(--fg-secondary)]">+{project.hard_skills_utilized.length - 3} more</span>
+                <span class="rounded-full bg-[var(--secondary-accent)] bg-opacity px-3 py-1 
+                           text-xs font-medium text-[var(--bg)]">+{project.hard_skills_utilized.length - 3} more</span>
             {/if}
         </div>
     </div>
@@ -73,3 +97,7 @@
         {/each}
     </div>
 </div>
+
+{#if showDetails}
+    <ProjectDetails {project} onClose={() => showDetails = false} />
+{/if}
