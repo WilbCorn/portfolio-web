@@ -24,7 +24,7 @@
 				filename: 'cv.pdf',
 				image: { type: 'jpeg', quality: 98 },
 				html2canvas: { scale: 2 },
-				jsPDF: { unit: 'in', format: 'letter'}
+                jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
 			};
 
 			html2pdf()

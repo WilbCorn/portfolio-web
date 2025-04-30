@@ -1,13 +1,17 @@
 <script>
 	import SeparatorWavy from "$lib/components/common/separator-wavy.svelte";
+	import Cv from "$lib/components/cv.svelte";
 	import Footer from "$lib/components/footer.svelte";
 	import AboutMeSection from "$lib/components/home/about_me/sections/about-me.svelte";
 	import HeroSection from "$lib/components/home/hero.svelte";
 	import ProjectSection from "$lib/components/home/project.svelte";
+	import Testcv from "$lib/components/testcv.svelte";
 
 </script>
 
-<div id="home">
+<Testcv></Testcv>
+
+<!-- <div id="home">
     <HeroSection/>
 </div>
 
@@ -26,4 +30,4 @@
 <div id="contact">
     <Footer bg_color="var(--bg)"/>
 </div>
-
+ -->

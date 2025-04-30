@@ -4,7 +4,7 @@
 
 </script>
 
-<NavBar />
+<!-- <NavBar /> -->
 
 <div class="min-h-screen">
 	<slot />
