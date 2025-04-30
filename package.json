@@ -39,6 +39,7 @@
 	"dependencies": {
 		"@inlang/paraglide-js": "^2.0.0",
 		"@lucide/svelte": "^0.487.0",
+		"html2pdf.js": "^0.10.3",
 		"mode-watcher": "^0.5.1"
 	}
 }

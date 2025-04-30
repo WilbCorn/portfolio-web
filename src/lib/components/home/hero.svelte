@@ -3,8 +3,47 @@
 	import ButtonIcon from '$lib/components/common/button-icon.svelte';
 	import { GithubIcon, LinkedinIcon, Download, Send } from '@lucide/svelte';
 	import { links } from '../../../config';
-	import { onMount } from 'svelte';
+	import { mount, onMount, unmount } from 'svelte';
 	import { fade, draw } from 'svelte/transition';
+	import Cv from '../cv.svelte';
+	let html2pdf: any;
+
+	function handleDownloadClick() {
+
+		    // Create a temporary div to render the component into
+			const tempDiv = document.createElement('div');
+				document.body.appendChild(tempDiv);
+				console.log('tempDiv', tempDiv);
+
+			// Mount the CV component into the temp div
+			const cvComponent = mount(Cv,{
+				target: tempDiv,
+			});
+
+		const element = tempDiv.querySelector('#cv-content');
+		if (element && html2pdf) {
+			const opt = {
+				margin: 0.5,
+				filename: 'cv.pdf',
+				image: { type: 'jpeg', quality: 98 },
+				html2canvas: { scale: 2 },
+				jsPDF: { unit: 'in', format: 'letter'}
+			};
+
+			html2pdf()
+				.from(element)
+				.set(opt)
+				.save();
+		}
+
+		// Unmount the component and remove the temp div
+		unmount(cvComponent);
+      	document.body.removeChild(tempDiv);
+	}
+
+	onMount(async () => {
+		html2pdf = (await import('html2pdf.js')).default;
+	});
 
 	let path: SVGPathElement;
 	let isVisible = false;
@@ -30,7 +69,7 @@
     }
 </script>
 
-<div class="flex w-full items-start justify-center p-4">
+<div id="hero" class="flex w-full items-start justify-center p-4">
 	<div class="relative flex w-full max-w-7xl flex-col items-center">
 		<!-- Main Row -->
 		<div class="relative flex w-full flex-col items-center lg:flex-row">
@@ -89,7 +128,7 @@
 			</div>
 
 			<!-- Text Container -->
-			<div
+			<div id="test-container"
 				class="z-10 mt-4 flex w-full flex-col items-center space-y-4 rounded-t-2xl p-6 text-center 
                        lg:mt-0 lg:ml-5 lg:items-end lg:text-right" 
 			>
@@ -117,7 +156,7 @@
 					</div>
 					<div class="justify flex flex-row items-end space-x-5 pt-4">
 						<ButtonIcon icon={Send} onclick={handleContactClick} buttonText={m.hero_buttons_contact()} />
-						<ButtonIcon icon={Download} onclick={() => {}} buttonText={m.hero_buttons_download_cv()} />
+						<ButtonIcon icon={Download} onclick={handleDownloadClick} buttonText={m.hero_buttons_download_cv()} />
 					</div>
 				</div>
 			</div>
