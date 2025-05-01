@@ -29,6 +29,19 @@
         const mailtoLink = `mailto:${personalInfo.email_address}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
         window.open(mailtoLink, '_blank');
     }
+
+	function handleDownloadClick() {
+		const resumePath = '/resume.pdf';
+		
+		const downloadLink = document.createElement('a');
+		downloadLink.href = resumePath;
+		
+		downloadLink.download = `resume_${personalInfo.name}.pdf`;
+		
+		document.body.appendChild(downloadLink);
+		downloadLink.click();
+		document.body.removeChild(downloadLink);
+	}
 </script>
 
 <div class="flex w-full items-start justify-center p-4 pt-20 md:pt-10">
@@ -118,7 +131,7 @@
 					</div>
 					<div class="justify flex flex-row items-end space-x-5 pt-4">
 						<ButtonIcon icon={Send} onclick={handleContactClick} buttonText={m.hero_buttons_contact()} />
-						<ButtonIcon icon={Download} onclick={() => {}} buttonText={m.hero_buttons_download_resume()} />
+						<ButtonIcon icon={Download} onclick={handleDownloadClick} buttonText={m.hero_buttons_download_resume()} />
 					</div>
 				</div>
 			</div>
