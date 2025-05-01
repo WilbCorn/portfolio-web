@@ -2,7 +2,8 @@
 	import { m } from '$lib/paraglide/messages.js';
 	import ButtonIcon from '$lib/components/common/button-icon.svelte';
 	import { GithubIcon, LinkedinIcon, Download, Send } from '@lucide/svelte';
-	import { links } from '../../../config';
+    import externalProfile from '$lib/data/external_profile.json';
+	import personalInfo from '$lib/data/personal_info.json';
 	import { onMount } from 'svelte';
 	import { fade, draw } from 'svelte/transition';
 
@@ -25,12 +26,12 @@
         const subject = "Contact from Portfolio Website";
         const body = "Hello,\n\nI'd like to get in touch with you regarding...";
         
-        const mailtoLink = `mailto:${links.email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+        const mailtoLink = `mailto:${personalInfo.email_address}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
         window.open(mailtoLink, '_blank');
     }
 </script>
 
-<div class="flex w-full items-start justify-center p-4">
+<div class="flex w-full items-start justify-center p-4 pt-20 md:pt-10">
 	<div class="relative flex w-full max-w-7xl flex-col items-center">
 		<!-- Main Row -->
 		<div class="relative flex w-full flex-col items-center lg:flex-row">
@@ -106,18 +107,18 @@
 					<div class="justify flex flex-row items-end space-x-2">
 						<ButtonIcon
 							icon={GithubIcon}
-							onclick={() => window.open(links.github, '_blank')}
+							onclick={() => window.open(externalProfile.github.link, '_blank')}
 							buttonText=""
 						/>
 						<ButtonIcon
 							icon={LinkedinIcon}
-							onclick={() => window.open(links.linkedin, '_blank')}
+							onclick={() => window.open(externalProfile.linked_in.link, '_blank')}
 							buttonText=""
 						/>
 					</div>
 					<div class="justify flex flex-row items-end space-x-5 pt-4">
 						<ButtonIcon icon={Send} onclick={handleContactClick} buttonText={m.hero_buttons_contact()} />
-						<ButtonIcon icon={Download} onclick={() => {}} buttonText={m.hero_buttons_download_cv()} />
+						<ButtonIcon icon={Download} onclick={() => {}} buttonText={m.hero_buttons_download_resume()} />
 					</div>
 				</div>
 			</div>

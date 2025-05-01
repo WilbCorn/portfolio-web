@@ -6,7 +6,6 @@
             "city": "Kuala Lumpur",
             "country": "Malaysia"
         },
-        "type": "Internship",
         "periods": [
             {
                 "start": {
@@ -65,7 +64,6 @@
             "city": "Kuala Lumpur",
             "country": "Malaysia"
         },
-        "type": "Part-time",
         "periods": [
             {
                 "start": {
@@ -75,6 +73,16 @@
                 "end": {
                     "month": "February",
                     "year": 2025
+                }
+            },
+            {
+                "start": {
+                    "month": "April",
+                    "year": 2025
+                },
+                "end": {
+                    "month": "",
+                    "year": ""
                 }
             }
         ],
@@ -101,7 +109,7 @@
             "Database Tools",
             "Angular",
             "Django",
-            "HTML, CSS, and JavaScript"
+            "HTML, CSS, JavaScript"
         ],
         "soft_skills": [
             "Problem-solving",
@@ -117,35 +125,6 @@
             "Contributed to the successful integration and testing of critical API functionalities.",
             "Supported deployment efforts and assisted colleagues, improving team efficiency."
         ],
-        "company_logo": "public/static/logo/boit_logo.png",
-        "company_url": "https://blueoceanit.com.my/",
-        "highlight": false
-    },
-    {
-        "company": "Blue Ocean IT Sdn. Bhd.",
-        "position": "Part-time Software Engineer",
-        "location": {
-            "city": "Kuala Lumpur",
-            "country": "Malaysia"
-        },
-        "type": "Part-time",
-        "periods": [
-            {
-                "start": {
-                    "month": "April",
-                    "year": 2025
-                },
-                "end": {
-                    "month": "",
-                    "year": ""
-                }
-            }
-        ],
-        "description": "Rejoined Blue Ocean IT on a part-time basis, currently contributing to ongoing software development tasks.",
-        "responsibilities": [],
-        "technologies": [],
-        "soft_skills": [],
-        "achievements": [],
         "company_logo": "public/static/logo/boit_logo.png",
         "company_url": "https://blueoceanit.com.my/",
         "highlight": false

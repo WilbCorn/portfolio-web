@@ -1,5 +1,17 @@
 {
-    "linked_in": "www.linkedin.com/in/wilbert-cornelius/",
-    "github": "www.github.com/WilbCorn/",
-    "credly": "www.credly.com/users/wilbert-cornelius.027ce7e7"
+    "linked_in": {
+        "name": "LinkedIn",
+        "profile_name": "Wilbert Cornelius",
+        "link": "https://www.linkedin.com/in/wilbert-cornelius/"
+    },
+    "github": {
+        "name": "Github",
+        "profile_name": "WilbCorn",
+        "link": "https://www.github.com/WilbCorn/"
+    },
+    "credly": {        
+        "name": "Credly",
+        "profile_name": "Wilbert Cornelius",
+        "link": "https://www.credly.com/users/wilbert-cornelius.027ce7e7"
+    }
 }

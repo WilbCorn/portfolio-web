@@ -1,9 +1,11 @@
 [
     {
         "name": "HackInsan",
-        "role": "Winner (3rd Place Overall, 1st Place Pemuda GEMA Category)",
+        "role": "Winner",
         "organization": "Permata Insan",
         "contribution": [
+            "Secured 1st Place in the Pemuda GEMA Category.",
+            "Achieved 3rd Place Overall in the HackInsan 2024 competition.",
             "Developed PemTeach, a teacher support tool to enhance volunteer teachers' capabilities.",
             "Focused on cultural insights and personalized teaching methods.",
             "Delivered an innovative solution using Flutter as part of the TryHards team."
@@ -43,17 +45,15 @@
     },
     {
         "name": "GCPBoleh Cloud Challenge (Season 5)",
-        "role": "Participant (Completed Challenge & Earned Badges)",
-        "organization": "Google Developer Groups (GDG Cloud KL) / Google Cloud",
+        "role": "Participant",
+        "organization": "Google Developer Groups KL",
         "contribution": [
-            "Completed the online self-study program focused on Google Cloud technologies.",
-            "Earned multiple Google Cloud skill badges through hands-on labs on Cloud Skills Boost.",
-            "Demonstrated proficiency in areas such as Foundational Infrastructure Tasks, Data/ML/AI Tasks, Secure Networks, Terraform, and Vertex AI based on earned badges.",
-            "Gained hands-on experience in creating and managing cloud resources, automating infrastructure, and deploying applications.",
-            "Delved into extracting insights from large datasets using BigQuery, applying machine learning techniques, and building models with TensorFlow.",
-            "Developed serverless applications using Firebase, including authentication, database management, storage, and hosting.",
-            "Engaged in a Google Cloud challenge focused on bracketology and data analysis for NCAA® March Madness®."
-        ],
+            "Earned 10+ Google Cloud skill badges via Cloud Skills Boost, mastering GCP infrastructure, Terraform, Vertex AI, and secure network design through intensive hands-on labs.",
+            "Built automated cloud solutions using Compute Engine and Cloud Storage.",
+            "Deployed scalable serverless apps using Firebase including authentication, database, and hosting features.",
+            "Analyzed NCAA® March Madness® data with BigQuery and applied TensorFlow for machine learning insights in a competitive challenge.",
+            "Certified in GCP fundamentals, data/ML workflows, and infrastructure-as-code (IaC) through a structured self-study program."
+          ],
         "year": "2023",
         "duration": "1 month",
         "soft_skills_utilized": [
@@ -63,18 +63,11 @@
             "Continuous Learning"
         ],
         "hard_skills_utilized": [
-            "Google Cloud Platform (GCP)",
-            "Cloud Skills Boost (Qwiklabs)",
-            "Vertex AI",
-            "Google Cloud Networking",
-            "Google Cloud IAM",
+            "Google Cloud",
             "Terraform",
-            "BigQuery",
-            "Cloud Storage",
-            "Compute Engine",
-            "Firebase",
+            "Vertex AI",
             "TensorFlow",
-            "Machine Learning"
+            "Firebase"
         ],
         "links": [
             
@@ -87,7 +80,7 @@
     {
         "name": "H2O Splashmania",
         "role": "Co-Leader",
-        "organization": "University Co-Curricular Activity",
+        "organization": "Asia Pacific University (APU)",
         "contribution": [
             "Coordinate seamless event execution through meticulous planning and strategic oversight.",
             "Lead and inspire teams, ensuring collaborative dynamics and optimal productivity.",
@@ -112,7 +105,7 @@
     {
         "name": "Lazada ASBX Business Challenge",
         "role": "Participant",
-        "organization": "Lazada Malaysia x APU (Asia Pacific University of Technology and Innovation)",
+        "organization": "Lazada Malaysia x APU",
         "contribution": [
             "Thoroughly analyze and identify complex problems in alignment with Design Thinking principles.",
             "Propose creative and innovative solutions to address identified problem statements.",

@@ -10,11 +10,6 @@
         ]
     },
     {
-        "name": "Mandarin",
-        "expertise": "Novice",
-        "certification": []
-    },
-    {
         "name": "Bahasa Indonesia",
         "expertise": "Native",
         "certification": []
@@ -22,6 +17,11 @@
     {
         "name": "Malaysian",
         "expertise": "Professional Working Proficiency",
+        "certification": []
+    },
+    {
+        "name": "Mandarin",
+        "expertise": "Novice",
         "certification": []
     }
 ]

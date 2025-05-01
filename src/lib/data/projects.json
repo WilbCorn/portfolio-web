@@ -74,7 +74,7 @@
         ]
     },
     {
-        "name": "Personal Portfolio Website (This Website!)",
+        "name": "Portfolio Website",
         "description": "A dynamic and responsive personal website built with SvelteKit and Tailwind CSS to showcase skills, projects, and professional experience. Features seamless light/dark theme switching and engaging animations.",
         "achievements": [
             "Developed a fully responsive design ensuring optimal viewing on all devices.",
@@ -108,15 +108,5 @@
             "Intersection Observer API"
         ],
         "images": []
-    },
-    {
-        "name": "",
-        "description": "",
-        "achievements": [],
-        "year": "",
-        "duration": "",
-        "link": "",
-        "soft_skills_utilized": [],
-        "hard_skills_utilized": []
     }
 ]

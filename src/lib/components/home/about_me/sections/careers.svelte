@@ -104,20 +104,16 @@
 
 							<div class="flex items-center">
 								<Calendar class="mr-1 h-4 w-4" />
-								{#each career.periods as period, index}
-									<span
-										>{formatPeriod(period as Period)}{index < career.periods.length - 1
-											? ', '
-											: ''}</span
-									>
-								{/each}
+								<span>
+									{career.periods.map((p) => formatPeriod(p as Period)).join(' | ')}
+								</span>
 							</div>
 
-							<span
+							<!-- <span
 								class="rounded-full bg-[var(--primary-accent)]/10 px-2 py-0.5 text-xs font-medium text-[var(--primary-accent)]"
 							>
 								{career.type}
-							</span>
+							</span> -->
 						</div>
 					</div>
 
@@ -210,21 +206,24 @@
 						</div>
 					{/if}
 
-					<!-- Company Logo (on larger screens) -->
+					<!-- Company Logo -->
 					{#if career.company_logo}
-						<div
-							class="absolute top-2 right-2 hidden h-15 w-15 items-center justify-center rounded-lg
-                                bg-[var(--bg-secondary)]/30 p-2 opacity-25 shadow-sm
-                                backdrop-blur-sm transition-all
-                                duration-300 group-hover:bg-white group-hover:opacity-85 group-hover:shadow-md sm:flex"
+					<div
+						class="absolute top-2 right-2 h-12 w-12 items-center justify-center 
+							rounded-lg bg-white/90 p-1.5 shadow-sm backdrop-blur-md 
+							transition-all duration-500 ease-in-out hidden sm:flex
+							sm:h-16 sm:w-16 sm:p-2 sm:opacity-70 sm:scale-95 sm:bg-white/80
+							sm:group-hover:opacity-100 sm:group-hover:scale-100 sm:group-hover:shadow-lg 
+							sm:group-hover:bg-white/95"
 						>
-							<img
-								src={career.company_logo}
-								alt="{career.company} logo"
-								class="h-full w-full object-contain object-center
-                                   filter transition-all group-hover:grayscale-0
-                                   dark:invert-[0.25] group-hover:dark:invert-0"
-							/>
+						<img
+							src={career.company_logo}
+							alt="{career.company} logo"
+							class="h-full w-full object-contain object-center
+								transform transition-all duration-500 
+								sm:filter sm:grayscale-[30%] sm:group-hover:grayscale-0 sm:group-hover:brightness-110
+								dark:invert-[0.15] sm:group-hover:dark:invert-0"
+						/>
 						</div>
 					{/if}
 				</div>

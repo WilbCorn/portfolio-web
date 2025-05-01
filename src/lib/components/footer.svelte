@@ -1,7 +1,7 @@
 <script lang="ts">
     import { Phone, Mail, MapPin, Github, Linkedin } from '@lucide/svelte';
-    import { links } from '../../config';
     import personalInfo from '$lib/data/personal_info.json';
+    import externalProfile from '$lib/data/external_profile.json';
 
     export let bg_color = "var(--bg)";
 </script>
@@ -32,12 +32,12 @@
 
             <!-- Social Links -->
             <div class="flex gap-4">
-                <a href={links.github} target="_blank" rel="noopener noreferrer"
+                <a href={externalProfile.github.link} target="_blank" rel="noopener noreferrer"
                    class="p-2 rounded-full bg-[var(--bg)] text-[var(--fg)] 
                           hover:text-[var(--accent)] transition-colors">
                     <Github class="h-6 w-6" />
                 </a>
-                <a href={links.linkedin} target="_blank" rel="noopener noreferrer"
+                <a href={externalProfile.linked_in.link} target="_blank" rel="noopener noreferrer"
                    class="p-2 rounded-full bg-[var(--bg)] text-[var(--fg)]
                           hover:text-[var(--accent)] transition-colors">
                     <Linkedin class="h-6 w-6" />

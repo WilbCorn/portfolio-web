@@ -138,7 +138,7 @@
 <ModeWatcher lightClassNames={['light']} darkClassNames={['dark']} />
 
 <nav
-	class="fixed top-0 right-0 left-0 z-50 flex items-center justify-between bg-[var(--bg)] px-4 py-6 shadow-md transition-all duration-300 ease-in-out sm:p-2 lg:p-4"
+	class="fixed top-0 right-0 left-0 z-50 flex items-center justify-between bg-[var(--bg)] px-4 py-6 transition-all duration-300 ease-in-out sm:p-2 md:p-3"
 >
 	<!-- Logo -->
 	<div class="flex items-center space-x-4 pl-3">
