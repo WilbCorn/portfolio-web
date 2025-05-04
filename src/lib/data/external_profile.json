@@ -13,5 +13,10 @@
         "name": "Credly",
         "profile_name": "Wilbert Cornelius",
         "link": "https://www.credly.com/users/wilbert-cornelius.027ce7e7"
+    },
+    "portfolio_web": {
+        "name": "Portfolio Web",
+        "profile_name": "wilbcorn.vercel.app",
+        "link": "https://wilbcorn.vercel.app/"
     }
 }

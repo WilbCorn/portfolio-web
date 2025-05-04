@@ -1,12 +1,121 @@
 [
     {
+        "name": "Portfolio Website",
+        "description": "A dynamic and responsive personal website built with SvelteKit and Tailwind CSS to showcase skills, projects, and professional experience. Features seamless light/dark theme switching and engaging animations.",
+        "achievements": [
+            "Developed a fully responsive portfolio website using SvelteKit and Tailwind CSS, ensuring optimal viewing across devices and clean, utility-first styling.",
+            "Implemented modular and reusable Svelte components along with smooth scrolling and scroll-triggered animations using Intersection Observer to enhance user experience and maintainability.",
+            "Integrated dynamic light/dark theme switching with Mode Watcher to support accessibility and user preferences.",
+            "Deployed the application via Vercel for continuous integration and streamlined delivery workflows.",
+            "Created a custom resume generator using Typst, with both portfolio and resume powered by a shared JSON data source for easier updates and consistent presentation."
+        ],
+        "summary_achievements": [
+            "Built a responsive portfolio website with SvelteKit and Tailwind CSS.",
+            "Implemented modular components, smooth animations, and theme switching.",
+            "Created a Typst-based resume generator using shared JSON data."
+        ],
+        "year": "2024",
+        "duration": "",
+        "link": "https://github.com/WilbCorn/portfolio-web",
+        "soft_skills_utilized": [
+            "Project Management",
+            "UI/UX Design",
+            "Problem-solving",
+            "Self-learning",
+            "Attention to Detail"
+        ],
+        "hard_skills_utilized": [
+            "SvelteKit",
+            "TypeScript",
+            "Tailwind CSS",
+            "Mode Watcher",
+            "Vite",
+            "HTML, CSS",
+            "Git",
+            "Intersection Observer API",
+            "Typst",
+            "Vercel"
+        ],
+        "images": [],
+        "in_resume": true
+    },
+    {
+        "name": "Document to PDF Converter",
+        "description": "A Python-based tool designed to convert various document formats (including .doc, .docx, .ppt, .pptx, .xls, .xlsx) to PDF. It supports processing individual files, entire directories, and ZIP archives, while preserving directory structures during conversion.",
+        "achievements": [
+            "Developed a versatile document conversion tool using Python on Linux, capable of handling multiple file formats.",
+            "Implemented functionality to process files from different sources: individual files, directories, and ZIP archives.",
+            "Ensured preservation of directory structures in the output, enhancing organization and accessibility.",
+            "Addressed formatting limitations inherent in converting Microsoft Office documents to PDF using LibreOffice in a Linux environment.",
+            "Utilized Git and GitHub for version control and collaborative development."
+        ],
+        "summary_achievements": [
+            "Created a Linux-based Python tool for converting various document formats to PDF.",
+            "Implemented support for processing files from multiple sources while preserving directory structures."
+        ],
+        "year": "2025",
+        "duration": "",
+        "link": "https://github.com/WilbCorn/document-to-pdf-converter",
+        "soft_skills_utilized": [
+            "Problem-Solving",
+            "Attention to Detail",
+            "Adaptability"
+        ],
+        "hard_skills_utilized": [
+            "Python",
+            "Linux",
+            "File Handling and Processing",
+            "LibreOffice Integration"
+        ],
+        "images": [],
+        "in_resume": true
+    },
+    {
+        "name": "Knit",
+        "description": "Knit is a Flutter-based mobile application designed to foster community engagement and reduce social isolation by enabling residents to connect, chat, and organize neighborhood events easily.",
+        "achievements": [
+            "Achieved A+ (4.0) in Mobile App Engineering module for the development of Knit app.",
+            "Developed a fully functional Flutter app with a modular codebase.",
+            "Implemented features for neighbor interaction, event organization, and onboarding of new residents.",
+            "Collaborated in a team setting to ideate and deliver a community-focused mobile solution."
+        ],
+        "summary_achievements": [
+            "Achieved A+ (4.0) in Mobile App Engineering module.",
+            "Enabled real-time neighbor interaction and local event organization.",
+            "Collaborated effectively in a team to deliver a polished mobile experience."
+        ],
+        "year": "2023",
+        "duration": "",
+        "link": "",
+        "soft_skills_utilized": [
+            "Team collaboration",
+            "Problem-solving",
+            "User empathy",
+            "Communication"
+        ],
+        "hard_skills_utilized": [
+            "Flutter",
+            "Dart",
+            "UI/UX Design",
+            "Firebase",
+            "Mobile App Development"
+        ],
+        "images": [],
+        "in_resume": true
+    },
+    {
         "name": "J.I.M",
         "description": "Fitness-Oriented Chatbot designed to assist users in selecting appropriate exercises, warm-ups, and providing health-related information.",
         "achievements": [
-            "Contributed in achieving GPA of 4.0 in Introduction to Artificial Intelligence module.",
+            "Contributed in achieving A+ (4.0) in Introduction to Artificial Intelligence module.",
             "Achieved a 94.4% success rate in providing users with helpful and relevant information.",
             "Assisted users in selecting exercises and warm-ups to target specific muscle groups.",
             "Responded to health-related inquiries with accurate and reliable information."
+        ],
+        "summary_achievements": [
+            "Achieved a A+ (4.0) in Introduction to Artificial Intelligence.",
+            "Developed a chatbot to assist users with exercise and health queries.",
+            "Achieved a 94.4% success rate in providing relevant information."
         ],
         "year": "2023",
         "duration": "",
@@ -21,18 +130,21 @@
             "Knowledge Base Creation",
             "Artificial Intelligence"
         ],
-        "images": [
-        ]
+        "images": [],
+        "in_resume": true
     },
     {
         "name": "APU Programming Cafe",
         "description": "Coaching Class Application for Programming that includes user registration, deletion, and SQL database management.",
         "achievements": [
-            "Contributed in achieving GPA of 3.7 in Introduction to Object Oriented Programming module using C#.",
-            "Designed and implemented the Administrator role within the application.",
-            "Enabled user registration and deletion for efficient management.",
-            "Designed and optimized SQL database schemas.",
-            "Implemented queries for data retrieval and manipulation."
+            "Achieved A (3.7) in the Introduction to Object-Oriented Programming module using C#.",
+            "Designed and implemented the Administrator role, including user registration and deletion features for efficient user management.",
+            "Designed and optimized SQL database schemas, and implemented queries for effective data retrieval and manipulation."
+        ],
+        "summary_achievements": [
+            "Achieved A (3.7) in Object-Oriented Programming using C#.",
+            "Developed admin features for user management.",
+            "Designed and optimized SQL database schemas."
         ],
         "year": "2023",
         "duration": "",
@@ -46,18 +158,22 @@
             "C# Programming",
             "SQL Database Design",
             "Object-Oriented Programming"
-        ]
+        ],
+        "images": [],
+        "in_resume": false
     },
     {
         "name": "Food Ordering System",
         "description": "An online food ordering system that allows customers to browse and place orders for various food types through multiple vendors.",
         "achievements": [
-            "Contributed in achieving GPA of 3.7 in Object Oriented Development with Java module.",
-            "Developed an efficient online food ordering system.",
-            "Integrated notifications using text files to keep users informed about their order status.",
-            "Created a user registration process for new users.",
-            "Utilized text files for efficient data storage and management.",
-            "Collaborated effectively with team members using GitHub and Git for version control."
+            "Achieved A (3.7) in Object-Oriented Development with Java module.",
+            "Developed an online food ordering system with features such as user registration, order tracking, and notification integration.",
+            "Utilized text files for lightweight data storage.",
+            "Collaborated effectively in a team environment using Git and GitHub for version control and code management."
+        ],
+        "summary_achievements": [
+            "Achieved A (3.7) in Object-Oriented Development with Java.",
+            "Developed an online food ordering system with user and order management."
         ],
         "year": "2023",
         "duration": "",
@@ -71,42 +187,8 @@
             "Java Programming",
             "GitHub/Git Version Control",
             "Text File Data Management"
-        ]
-    },
-    {
-        "name": "Portfolio Website",
-        "description": "A dynamic and responsive personal website built with SvelteKit and Tailwind CSS to showcase skills, projects, and professional experience. Features seamless light/dark theme switching and engaging animations.",
-        "achievements": [
-            "Developed a fully responsive design ensuring optimal viewing on all devices.",
-            "Integrated seamless light/dark mode theme switching using Mode Watcher.",
-            "Built with SvelteKit for a high-performance, modern web experience.",
-            "Utilized Tailwind CSS for efficient, utility-first styling.",
-            "Implemented smooth scrolling and scroll-triggered animations using Intersection Observer.",
-            "Created reusable Svelte components for maintainability and consistency.",
-            "Deployed via Vercel for continuous integration and delivery."
         ],
-        "year": "2024",
-        "duration": "Ongoing",
-        "link": "https://wilbcorn.vercel.app/",
-        "soft_skills_utilized": [
-            "Project Management",
-            "UI/UX Design",
-            "Problem-solving",
-            "Self-learning",
-            "Attention to Detail"
-        ],
-        "hard_skills_utilized": [
-            "SvelteKit",
-            "TypeScript",
-            "Tailwind CSS",
-            "Mode Watcher",
-            "Vite",
-            "HTML",
-            "CSS",
-            "Git",
-            "GitHub",
-            "Intersection Observer API"
-        ],
-        "images": []
+        "images": [],
+        "in_resume": false
     }
 ]

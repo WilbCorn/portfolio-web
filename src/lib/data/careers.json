@@ -20,28 +20,25 @@
         ],
         "description": "Software Engineer Internship at Blue Ocean IT, focusing on full-stack development, database management, and improving software engineering practices within an agile environment.",
         "responsibilities": [
-            "Designed and implemented responsive, user-friendly interfaces using HTML, CSS, JavaScript, Angular, and Bootstrap, ensuring accessibility and cross-browser compatibility.",
-            "Built scalable backend systems and developed RESTful APIs using Django and Python for efficient data handling and secure communication.",
-            "Performed complex T-SQL operations, optimized queries, and contributed to scalable database schema design, ensuring data integrity and performance.",
-            "Debugged and resolved application issues, conducted root-cause analysis, and enhanced system stability.",
-            "Conducted security assessments, addressed vulnerabilities, and implemented robust authentication and authorization mechanisms.",
-            "Automated data migration scripts and ensured smooth deployments using CI/CD pipelines and rollback strategies.",
-            "Streamlined workflows by developing Python-based automation tools, reducing manual tasks and enhancing productivity.",
-            "Collaborated using Git and GitLab, managing version control and ensuring code quality through pull requests and merge conflict resolution.",
-            "Created detailed documentation, including API references, system diagrams, and changelogs for long-term maintainability."
+            "Developed and maintained dynamic web platforms, ensuring responsive design and user-friendly interfaces.",
+            "Implemented and supported backend services and APIs, enabling efficient data handling and system integration.",
+            "Optimized relational databases to improve performance, data integrity, and scalability.",
+            "Automated task reporting processes to reduce manual effort and improve team efficiency.",
+            "Collaborated with team members using version control and code reviews to ensure code quality and resolve conflicts.",
+            "Enhanced user access control by implementing secure authentication mechanisms in backend systems.",
+            "Developed APIs to provide external users with direct, secure access to application features."
         ],
         "technologies": [
             "HTML, CSS, and JavaScript",
             "Angular",
-            "Bootstrapping",
             "Django",
             "Python",
-            "T-SQL",
             "RESTful APIs",
             "Git",
             "GitLab",
             "SQL Server",
-            "Database Design"
+            "LDAP",
+            "HTML, CSS, JavaScript"
         ],
         "soft_skills": [
             "Communication",
@@ -51,7 +48,17 @@
             "Collaboration"
         ],
         "achievements": [
-            "Gained expertise in Python libraries, RESTful API design, full-stack development, and software engineering best practices like testing and scalability."
+            "Reduced page load times by ~90% through AJAX-based data fetching with comprehensive error handling, significantly enhancing user experience.",
+            "Utilized HTML, CSS, JavaScript, Angular, and Django to build and maintain web platforms, improving overall usability and performance.",
+            "Reduced data fetching time by ~50% and eliminated internal errors through T-SQL query tuning and Django backend optimizations, ensuring stable, high-performance retrieval.",
+            "Automated daily reporting tasks for internal employees using Python and GitLab APIs, improving workforce efficiency and reducing manual effort.",
+            "Integrated Django authentication with corporate LDAP for centralized user management, automated provisioning, and consistent access control."
+        ],
+        "summary_achievements": [
+            "Reduced page load times by ~90% with AJAX-based data fetching and error handling.",
+            "Cut data fetching time by ~50% through T-SQL and backend optimizations.",
+            "Automated daily reporting using Python and GitLab APIs.",
+            "Integrated Django authentication with corporate LDAP for centralized access control."
         ],
         "company_logo": "public/static/logo/boit_logo.png",
         "company_url": "https://blueoceanit.com.my/",
@@ -88,28 +95,23 @@
         ],
         "description": "Continued contributing to software development projects on a part-time basis, focusing on backend data processing, scheduling, API integration, and comprehensive debugging.",
         "responsibilities": [
-            "Assisted in the research, testing, and integration of external APIs.",
-            "Addressed and resolved numerous complex bugs and technical issues across different application components.",
-            "Contributed to code management, merging, and ensuring code quality.",
-            "Developed and updated backend functionalities related to data handling and process automation.",
-            "Provided technical support and guidance to fellow team members.",
-            "Worked on database-related issues, including data discrepancies and schema adjustments.",
-            "Participated in deployment assistance and system maintenance tasks.",
-            "Researched and implemented fixes for security and authentication issues."
+            "Supported research, testing, and integration of third-party APIs to expand application capabilities.",
+            "Investigated and resolved complex bugs across multiple application layers, improving system reliability.",
+            "Contributed to backend development focused on data processing, automation, and performance optimization.",
+            "Resolved data inconsistencies and participated in schema design updates to maintain database accuracy and integrity.",
+            "Assisted in application deployment and routine maintenance to ensure smooth system operations.",
+            "Identified and addressed security and authentication issues through targeted research and implementation.",
+            "Designed and developed backend microservices with inter-service communication to support modular system architecture."
         ],
         "technologies": [
+            "RESTful APIs",
             "Git",
             "GitLab",
-            "Python",
+            "Microservices",
             "SQL Server",
             "APIs",
-            "XML",
-            "LDAP",
-            "Debugging Tools",
-            "Database Tools",
             "Angular",
-            "Django",
-            "HTML, CSS, JavaScript"
+            "Django"
         ],
         "soft_skills": [
             "Problem-solving",
@@ -121,9 +123,19 @@
             "Analytical Thinking"
         ],
         "achievements": [
-            "Successfully resolved a wide range of technical issues, enhancing application stability and performance.",
-            "Contributed to the successful integration and testing of critical API functionalities.",
-            "Supported deployment efforts and assisted colleagues, improving team efficiency."
+            "Improved backend reliability by resolving recurring bugs across Django-based services and ensuring stable API integration.",
+            "Reduced system errors and enhanced performance through optimized SQL queries and schema updates in SQL Server.",
+            "Improved authentication stability by resolving issues related to external API interactions.",
+            "Enhanced backend flexibility and maintainability by developing Python-based microservices with clear inter-service communication.",
+            "Enhanced and maintained Angular-based frontend integrated with Django APIs, reducing frontend bugs and enabling the addition of new features for improved functionality.",
+            "Developed multiple microservices with token-based authentication, ensuring secure and efficient inter-service communication."
+        ],
+        "summary_achievements": [
+            "Resolved recurring bugs and improved backend reliability across Django services.",
+            "Reduced system errors and improved performance with optimized SQL queries.",
+            "Enhanced authentication stability for external API interactions.",
+            "Developed multiple Python microservices with secure, token-based communication.",
+            "Reduced frontend bugs and enabled new features in Angular-Django integration."
         ],
         "company_logo": "public/static/logo/boit_logo.png",
         "company_url": "https://blueoceanit.com.my/",

@@ -112,10 +112,10 @@
         ]
     },
     {
-        "category": "Tools",
+        "category": "Platforms & Tools",
         "skills": [
             {
-                "name": "Figma",
+                "name": "Github",
                 "years_of_experience": "",
                 "proficiency": "",
                 "last_used": ""
@@ -125,14 +125,38 @@
                 "years_of_experience": "",
                 "proficiency": "",
                 "last_used": ""
+            },
+            {
+                "name": "Gitlab",
+                "years_of_experience": "",
+                "proficiency": "",
+                "last_used": ""
+            },
+            {
+                "name": "Firebase",
+                "years_of_experience": "",
+                "proficiency": "",
+                "last_used": ""
+            },
+            {
+                "name": "Vercel",
+                "years_of_experience": "",
+                "proficiency": "",
+                "last_used": ""
             }
         ]
     },
     {
-        "category": "Cloud",
+        "category": "Operating Systems",
         "skills": [
             {
-                "name": "Firebase",
+                "name": "Windows",
+                "years_of_experience": "",
+                "proficiency": "",
+                "last_used": ""
+            },
+            {
+                "name": "Linux (Fedora)",
                 "years_of_experience": "",
                 "proficiency": "",
                 "last_used": ""
