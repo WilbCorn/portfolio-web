@@ -10,6 +10,8 @@
 	let isVisible = false;
 	let isSvgFinished = false;
 
+	let my_name = personalInfo.name;
+
 	// Increase duration to account for all animations
 	const SVG_DURATION = 3000; // 2000ms draw + 1000ms fill
 
@@ -30,12 +32,15 @@
     }
 
 	function handleDownloadClick() {
-		const resumePath = '/resume.pdf';
+
+		const pdf_name = `resume_${my_name}.pdf`;
+
+		const resumePath = '/' + pdf_name;
 		
 		const downloadLink = document.createElement('a');
 		downloadLink.href = resumePath;
 		
-		downloadLink.download = `resume_${personalInfo.name}.pdf`;
+		downloadLink.download = pdf_name;
 		
 		document.body.appendChild(downloadLink);
 		downloadLink.click();
@@ -90,7 +95,7 @@
 						transition:fade={{ duration: 1000 }}
 					>
 						<img
-							src="//img/profile.png"
+							src="/img/profile.png"
 							alt="Profile"
 							class="h-full w-full object-cover animate-fadeIn"
 							style="pointer-events: none;"
