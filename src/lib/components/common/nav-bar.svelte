@@ -1,8 +1,5 @@
 <script lang="ts">
-	import { setLocale } from '$lib/paraglide/runtime';
-	import type { Locale } from '$lib/paraglide/runtime';
 	import { MoonStar, Sun, Menu, X, ChevronDown } from '@lucide/svelte'; // Added ChevronDown
-	import { page } from '$app/state';
 	import { ModeWatcher, toggleMode, userPrefersMode } from 'mode-watcher';
 	import { writable } from 'svelte/store';
 	import { fade, slide } from 'svelte/transition';
@@ -10,19 +7,6 @@
 	import '$lib/styles/global.css';
 	import { onMount } from 'svelte';
 	import ButtonIcon from './button-icon.svelte';
-
-	type Language = {
-		code: Locale;
-		label: String;
-	};
-
-	// Available languages
-	const languages: Language[] = [
-		{ code: 'en', label: 'English' },
-		{ code: 'ms', label: 'Malay' },
-		{ code: 'zh-cn', label: '中文' },
-		{ code: 'id', label: 'Indonesian' }
-	] as const;
 
 	// Navigation items with subitems for About Me
 	const navItems = [
@@ -50,22 +34,6 @@
 		} else {
 			openDropdown = href;
 		}
-	}
-
-	// Get currently selected language
-	let currentLanguage: Locale;
-
-	// Initialize language on mount
-	onMount(() => {
-		currentLanguage = localStorage.getItem('preferred-lang') as Locale;
-		setLocale(currentLanguage);
-	});
-
-	function handleLanguageChange(e: Event) {
-		const newLang = (e.target as HTMLSelectElement).value as Locale;
-		localStorage.setItem('preferred-lang', newLang);
-		currentLanguage = newLang;
-		setLocale(currentLanguage);
 	}
 
 	// Initialize theme state
