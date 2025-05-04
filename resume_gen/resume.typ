@@ -250,7 +250,7 @@
 
   let all_skills = soft_skills.sorted()
   text(all_skills.join(" | "), size: 8.9pt)
-  v(-4pt)
+  v(2pt)
 }
 
 #let combined_skills_section() = {
