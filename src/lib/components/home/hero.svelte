@@ -91,7 +91,7 @@
 						transition:fade={{ duration: 1000 }}
 					>
 						<img
-							src="/public/static/img/profile.png"
+							src="//img/profile.png"
 							alt="Profile"
 							class="h-full w-full object-cover animate-fadeIn"
 							style="pointer-events: none;"

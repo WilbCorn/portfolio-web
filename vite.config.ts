@@ -14,10 +14,6 @@ export default defineConfig({
 	],
 	server: {
 		fs: {
-			allow: [
-                '/home/wb/Code/Projects/personal-web/public',
-            ],
 		},
 	  },
-	publicDir: 'public'
 });

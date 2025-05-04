@@ -60,7 +60,7 @@
             "Automated daily reporting using Python and GitLab APIs.",
             "Integrated Django authentication with corporate LDAP for centralized access control."
         ],
-        "company_logo": "public/static/logo/boit_logo.png",
+        "company_logo": "/logo/boit_logo.png",
         "company_url": "https://blueoceanit.com.my/",
         "highlight": true
     },
@@ -137,7 +137,7 @@
             "Developed multiple Python microservices with secure, token-based communication.",
             "Reduced frontend bugs and enabled new features in Angular-Django integration."
         ],
-        "company_logo": "public/static/logo/boit_logo.png",
+        "company_logo": "/logo/boit_logo.png",
         "company_url": "https://blueoceanit.com.my/",
         "highlight": false
     }
