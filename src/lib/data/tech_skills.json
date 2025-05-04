@@ -115,6 +115,12 @@
         "category": "Platforms & Tools",
         "skills": [
             {
+                "name": "Docker",
+                "years_of_experience": "",
+                "proficiency": "",
+                "last_used": ""
+            },
+            {
                 "name": "Github",
                 "years_of_experience": "",
                 "proficiency": "",
