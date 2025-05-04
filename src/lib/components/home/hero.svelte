@@ -134,8 +134,17 @@
 						/>
 					</div>
 					<div class="justify flex flex-row items-end space-x-5 pt-4">
-						<ButtonIcon icon={Send} onclick={handleContactClick} buttonText={"Contact Me"} />
-						<ButtonIcon icon={Download} onclick={handleDownloadClick} buttonText={"Download Resume"} />
+						<!-- Mobile buttons -->
+						<div class="flex space-x-3 sm:hidden">
+							<ButtonIcon icon={Send} onclick={handleContactClick} buttonText="Contact" />
+							<ButtonIcon icon={Download} onclick={handleDownloadClick} buttonText="Resume" />
+						</div>
+						
+						<!-- Desktop buttons -->
+						<div class="hidden space-x-3 sm:flex">
+							<ButtonIcon icon={Send} onclick={handleContactClick} buttonText="Contact Me" />
+							<ButtonIcon icon={Download} onclick={handleDownloadClick} buttonText="Download Resume" />
+						</div>
 					</div>
 				</div>
 			</div>
