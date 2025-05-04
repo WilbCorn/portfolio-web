@@ -1,11 +1,10 @@
 <script lang="ts">
-	import { m } from '$lib/paraglide/messages.js';
 	import ButtonIcon from '$lib/components/common/button-icon.svelte';
 	import { GithubIcon, LinkedinIcon, Download, Send } from '@lucide/svelte';
     import externalProfile from '$lib/data/external_profile.json';
 	import personalInfo from '$lib/data/personal_info.json';
 	import { onMount } from 'svelte';
-	import { fade, draw } from 'svelte/transition';
+	import { fade } from 'svelte/transition';
 
 	let path: SVGPathElement;
 	let isVisible = false;
@@ -108,11 +107,11 @@
                        lg:mt-0 lg:ml-5 lg:items-end lg:text-right" 
 			>
 				<h2 class="text-xl font-bold text-[var(--secondary-accent)] sm:text-2xl">
-					{m.hero_subheading()}
+					{personalInfo.role}
 				</h2>
-				<h1 class="text-3xl font-bold text-[var(--fg)] sm:text-4xl">{m.hero_heading()}</h1>
+				<h1 class="text-3xl font-bold text-[var(--fg)] sm:text-4xl">{personalInfo.name}</h1>
 				<p class="max-w-xs text-base text-[var(--fg)] sm:max-w-md sm:text-lg">
-					{m.hero_description()}
+					{personalInfo.description}
 				</p>
 
 				<!-- Buttons Container -->
@@ -130,8 +129,8 @@
 						/>
 					</div>
 					<div class="justify flex flex-row items-end space-x-5 pt-4">
-						<ButtonIcon icon={Send} onclick={handleContactClick} buttonText={m.hero_buttons_contact()} />
-						<ButtonIcon icon={Download} onclick={handleDownloadClick} buttonText={m.hero_buttons_download_resume()} />
+						<ButtonIcon icon={Send} onclick={handleContactClick} buttonText={"Contact Me"} />
+						<ButtonIcon icon={Download} onclick={handleDownloadClick} buttonText={"Download Resume"} />
 					</div>
 				</div>
 			</div>

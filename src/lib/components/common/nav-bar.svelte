@@ -1,5 +1,4 @@
 <script lang="ts">
-	import { m } from '$lib/paraglide/messages.js';
 	import { setLocale } from '$lib/paraglide/runtime';
 	import type { Locale } from '$lib/paraglide/runtime';
 	import { MoonStar, Sun, Menu, X, ChevronDown } from '@lucide/svelte'; // Added ChevronDown
@@ -27,10 +26,10 @@
 
 	// Navigation items with subitems for About Me
 	const navItems = [
-		{ href: '#home', label: m.nav_home },
+		{ href: '#home', label: "Home" },
 		{
 			href: '#about',
-			label: m.nav_about,
+			label: "About",
 			subitems: [
 				{ href: '#about-skills', label: 'Skills' },
 				{ href: '#about-experiences', label: 'Experience' },
@@ -38,8 +37,8 @@
 				{ href: '#about-qualifications', label: 'Qualifications' }
 			]
 		},
-		{ href: '#projects', label: m.nav_projects },
-		{ href: '#contact', label: m.nav_contact }
+		{ href: '#projects', label: "Projects" },
+		{ href: '#contact', label: "Contact" }
 	] as const;
 
 	// Track if a dropdown is open
@@ -178,7 +177,7 @@
 										  ease-in-out hover:scale-105"
 									on:click={() => toggleMobileSubmenu(item.href)}
 								>
-									{item.label()}
+									{item.label}
 									<ChevronDown
 										class="h-4 w-4 transition-transform duration-300 
 											 {openMobileSubmenu === item.href ? 'rotate-180' : ''}"
@@ -216,7 +215,7 @@
 										  transform-gpu transition-all duration-300
 										  ease-in-out hover:scale-105"
 								>
-									{item.label()}
+									{item.label}
 								</a>
 							{/if}
 						</li>
@@ -254,7 +253,7 @@
 						  {isAboutActive ? 'text-[var(--primary-accent)]' : 'hover:text-[var(--secondary-accent)]'}
 						  transition-colors duration-300 ease-in-out"
 						>
-							{item.label()}
+							{item.label}
 							<ChevronDown
 								class="h-4 w-4 transition-transform duration-300 
 								 {openDropdown === item.href ? 'rotate-180' : ''}"
@@ -307,7 +306,7 @@
 								: 'hover:text-[var(--secondary-accent)]'}
 						  transition-colors duration-300 ease-in-out"
 						>
-							{item.label()}
+							{item.label}
 							<ChevronDown
 								class="h-4 w-4 transition-transform duration-300 
 								 {openDropdown === item.href ? 'rotate-180' : ''}"
@@ -350,7 +349,7 @@
 								: 'hover:text-[var(--secondary-accent)]'}
 								  transition-colors duration-300 ease-in-out"
 						>
-							{item.label()}
+							{item.label}
 							<!-- Hover underline -->
 							<span
 								class="absolute bottom-0 left-0 h-0.5 w-0 bg-[var(--secondary-accent)]
