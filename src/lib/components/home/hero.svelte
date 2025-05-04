@@ -35,7 +35,7 @@
 
 		const pdf_name = `resume_${my_name}.pdf`;
 
-		const resumePath = '/' + pdf_name;
+		const resumePath = '/resume.pdf';
 		
 		const downloadLink = document.createElement('a');
 		downloadLink.href = resumePath;
