@@ -7,6 +7,10 @@
 
 </script>
 
+<svelte:head>
+  <title>Wilbert - Software Engineer</title>
+</svelte:head>
+
 <div id="home">
     <HeroSection/>
 </div>
