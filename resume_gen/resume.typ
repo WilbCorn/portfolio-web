@@ -69,7 +69,7 @@
 // About me section
 #let about_me_section() = {
   section_header("About Me")
-  text(personal_info.description + ".", size: 8.9pt)
+  text(personal_info.description + ".", size: 8.5pt)
   parbreak()
 }
 
@@ -89,7 +89,7 @@
       text(style: "italic", experience.organization, size: 9pt)
       v(-5pt)
 
-      list(..experience.summary_contribution.map(contr => text(contr, size: 8.9pt)))
+      list(..experience.summary_contribution.map(contr => text(contr, size: 8.5pt)))
       v(5pt)
     }
   }
@@ -109,7 +109,7 @@
     // Row 2
     text(education.location.school, size: 9pt, style: "italic")
     h(1fr)
-    text("CGPA: ", size: 8.9pt)
+    text("CGPA: ", size: 8.5pt)
     text(str(education.score.current_cgpa), size: 9pt)
     " / "
     text(str(education.score.limit_cgpa), size: 9pt)
@@ -126,21 +126,21 @@
     text(education.end.year, size: 9pt)
 
     // Row 4
-    list(..education.achievements.map(achv => text(achv.name + " (" + achv.start + " - " + achv.end + ")", size: 8.9pt)))
+    list(..education.achievements.map(achv => text(achv.name + " (" + achv.start + " - " + achv.end + ")", size: 8.5pt)))
   }
 }
 
 #let list_with_skills(achievements, skills) = {
   list(
     spacing: auto,
-    ..achievements.map(achv => text(achv, size: 8.9pt)),
+    ..achievements.map(achv => text(achv, size: 8.5pt)),
     {
-      text("Skills Used: ", size: 8.9pt, weight: "bold")
+      text("Skills Used: ", size: 8.5pt, weight: "bold")
       let skills_count = skills.len()
       for (i, skill) in skills.enumerate() {
-        text(skill, size: 8.9pt)
+        text(skill, size: 8.5pt)
         if i < skills_count - 1 {
-          text(", ", size: 8.9pt)
+          text(", ", size: 8.5pt)
         }
       }
       "."
@@ -169,14 +169,14 @@
 #let list_with_techs(achievements, techs) = {
   list(
     spacing: auto,
-    ..achievements.map(achv => text(achv, size: 8.9pt)),
+    ..achievements.map(achv => text(achv, size: 8.5pt)),
     {
-      text("Techs Used: ", size: 8.9pt, weight: "bold")
+      text("Techs Used: ", size: 8.5pt, weight: "bold")
       let techs_count = techs.len()
       for (i, tech) in techs.enumerate() {
-        text(tech, size: 8.9pt)
+        text(tech, size: 8.5pt)
         if i < techs_count - 1 {
-          text(", ", size: 8.9pt)
+          text(", ", size: 8.5pt)
         }
       }
       "."
@@ -211,7 +211,7 @@
         text("Present", size: 9pt)
       }
       if i < period_count - 1 {
-        text(" | ", size: 8.9pt)
+        text(" | ", size: 8.5pt)
       }
     }
     v(-5pt)
@@ -233,9 +233,9 @@
     h(6pt)
     let skills_count = category.skills.len()
     for (i, skill) in category.skills.enumerate() {
-      text(skill.name, size: 8.9pt)
+      text(skill.name, size: 8.5pt)
       if i < skills_count - 1 {
-        text(" | ", size: 8.9pt)
+        text(" | ", size: 8.5pt)
       }
     }
     v(-4pt)
@@ -249,7 +249,7 @@
   }
 
   let all_skills = soft_skills.sorted()
-  text(all_skills.join(" | "), size: 8.9pt)
+  text(all_skills.join(" | "), size: 8.5pt)
   v(2pt)
 }
 
@@ -274,7 +274,7 @@
         } else {
           ""
         },
-      size: 8.9pt,
+      size: 8.5pt,
     )),
   )
 }
@@ -285,12 +285,12 @@
 
   columns(2, gutter: 15pt)[
     #for cert in certifications [
-      • #text(cert.name, weight: "medium", size: 8.9pt)
+      • #text(cert.name, weight: "medium", size: 8.5pt)
       #linebreak()
       #h(6pt)
-      #text(cert.provider, style: "italic", size: 8.9pt)
+      #text(cert.provider, style: "italic", size: 8.5pt)
       #if cert.start != none [
-        #text("(" + cert.start + ")", size: 8.9pt)
+        #text("(" + cert.start + ")", size: 8.5pt)
       ]
       #v(5pt)
     ]
