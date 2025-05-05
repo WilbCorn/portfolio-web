@@ -2,8 +2,7 @@
 	import { Moon, Sun, Menu, X, ChevronDown } from '@lucide/svelte';
 	import { ModeWatcher, toggleMode, userPrefersMode } from 'mode-watcher';
 	import { writable } from 'svelte/store';
-	import { fade, slide, scale } from 'svelte/transition';
-	import { cubicOut } from 'svelte/easing';
+	import { fade, slide } from 'svelte/transition';
 
 	import '$lib/styles/global.css';
 	import { onMount } from 'svelte';
@@ -53,7 +52,6 @@
 	let activeSection = '';
 	$: isAboutActive = activeSection === '#about' || activeSection.startsWith('#about-');
 
-	let initialRender = false;
 	let showThemeButton = false;
 
 	onMount(() => {
@@ -80,10 +78,7 @@
 			});
 		}, 500);
 
-		// Set initialRender to true after a tiny delay
 		setTimeout(() => {
-			initialRender = true;
-
 			// Additional delay for theme button
 			setTimeout(() => {
 				showThemeButton = true;
@@ -210,23 +205,21 @@
 						<!-- Placeholder circle that's visible until the real button loads -->
 						<div class="h-8 w-8 rounded-full bg-[var(--fg)]/5 opacity-30"></div>
 
-						{#if initialRender}
+						<div
+							class="theme-button absolute inset-0 flex items-center justify-center {showThemeButton
+								? 'visible'
+								: ''}"
+						>
 							{#if $isDarkMode}
-								<div
-									class="absolute inset-0 flex items-center justify-center"
-									in:fade={{ duration: 1000, delay: 400, easing: cubicOut }}
-								>
+								<div class="absolute inset-0 flex items-center justify-center">
 									<ButtonIcon onclick={toggleMode} icon={Moon} />
 								</div>
 							{:else}
-								<div
-									class="absolute inset-0 flex items-center justify-center"
-									in:fade={{ duration: 1000, delay: 400, easing: cubicOut }}
-								>
+								<div class="absolute inset-0 flex items-center justify-center">
 									<ButtonIcon onclick={toggleMode} icon={Sun} />
 								</div>
 							{/if}
-						{/if}
+						</div>
 					</div>
 				</div>
 			</div>
@@ -375,15 +368,11 @@
 						: ''}"
 				>
 					{#if $isDarkMode}
-						<div
-							class="absolute inset-0 flex items-center justify-center"
-						>
+						<div class="absolute inset-0 flex items-center justify-center">
 							<ButtonIcon onclick={toggleMode} icon={Moon} />
 						</div>
 					{:else}
-						<div
-							class="absolute inset-0 flex items-center justify-center"
-						>
+						<div class="absolute inset-0 flex items-center justify-center">
 							<ButtonIcon onclick={toggleMode} icon={Sun} />
 						</div>
 					{/if}
