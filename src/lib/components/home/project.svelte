@@ -15,7 +15,7 @@
     });
 </script>
 
-<section class="flex w-full flex-col gap-8 p-6 pb-30 bg-[{bg_color}] pt-20">
+<section class="flex w-full flex-col gap-8 p-6 pb-30 bg-[{bg_color}]">
     <div class="w-full border-b-2 border-[var(--fg)] pb-4">
         <IconText
             icon={CodeXml}

@@ -1,8 +1,9 @@
 <script lang="ts">
-	import { MoonStar, Sun, Menu, X, ChevronDown } from '@lucide/svelte'; // Added ChevronDown
+	import { Moon, Sun, Menu, X, ChevronDown } from '@lucide/svelte';
 	import { ModeWatcher, toggleMode, userPrefersMode } from 'mode-watcher';
 	import { writable } from 'svelte/store';
-	import { fade, slide } from 'svelte/transition';
+	import { fade, slide, scale } from 'svelte/transition';
+	import { cubicOut } from 'svelte/easing';
 
 	import '$lib/styles/global.css';
 	import { onMount } from 'svelte';
@@ -10,10 +11,10 @@
 
 	// Navigation items with subitems for About Me
 	const navItems = [
-		{ href: '#home', label: "Home" },
+		{ href: '#home', label: 'Home' },
 		{
 			href: '#about',
-			label: "About",
+			label: 'About',
 			subitems: [
 				{ href: '#about-skills', label: 'Skills' },
 				{ href: '#about-experiences', label: 'Experience' },
@@ -21,8 +22,8 @@
 				{ href: '#about-qualifications', label: 'Qualifications' }
 			]
 		},
-		{ href: '#projects', label: "Projects" },
-		{ href: '#contact', label: "Contact" }
+		{ href: '#projects', label: 'Projects' },
+		{ href: '#contact', label: 'Contact' }
 	] as const;
 
 	// Track if a dropdown is open
@@ -52,6 +53,9 @@
 	let activeSection = '';
 	$: isAboutActive = activeSection === '#about' || activeSection.startsWith('#about-');
 
+	let initialRender = false;
+	let showThemeButton = false;
+
 	onMount(() => {
 		// Set up intersection observer to detect active section with lower threshold
 		const observer = new IntersectionObserver(
@@ -70,14 +74,24 @@
 			const sections = document.querySelectorAll(
 				'#home, #about, #about-skills, #about-experiences, #about-careers, #about-qualifications, #projects, #contact'
 			);
-			
+
 			sections.forEach((section) => {
 				observer.observe(section);
 			});
 		}, 500);
+
+		// Set initialRender to true after a tiny delay
+		setTimeout(() => {
+			initialRender = true;
+
+			// Additional delay for theme button
+			setTimeout(() => {
+				showThemeButton = true;
+			}, 50);
+		}, 50);
 	});
 
-	// Add scroll handler function
+	// Scroll handler function
 	function handleNavClick(e: Event, href: string) {
 		e.preventDefault();
 		const element = document.querySelector(href);
@@ -139,8 +153,8 @@
 										  {item.href === '#about' && isAboutActive
 										? 'text-[var(--primary-accent)]'
 										: activeSection.startsWith(item.href)
-										? 'text-[var(--primary-accent)]'
-										: 'hover:text-[var(--secondary-accent)]'}
+											? 'text-[var(--primary-accent)]'
+											: 'hover:text-[var(--secondary-accent)]'}
 										  transform-gpu transition-all duration-300
 										  ease-in-out hover:scale-105"
 									on:click={() => toggleMobileSubmenu(item.href)}
@@ -190,19 +204,31 @@
 					{/each}
 				</ul>
 
-				<!-- Language Selector -->
-				<!-- <select
-					class="cursor-pointer appearance-none rounded border bg-transparent px-2 py-1 pr-8 text-[var(--primary-accent)]"
-					on:change={handleLanguageChange}
-					bind:value={currentLanguage}
-				>
-					{#each languages as lang}
-						<option value={lang.code}>{lang.label}</option>
-					{/each}
-				</select> -->
-
 				<!-- Theme Toggle -->
-				<ButtonIcon onclick={toggleMode} icon={$isDarkMode ? MoonStar : Sun} />
+				<div class="flex items-center space-x-4 duration-300 ease-in-out">
+					<div class="relative flex h-10 w-10 items-center justify-center">
+						<!-- Placeholder circle that's visible until the real button loads -->
+						<div class="h-8 w-8 rounded-full bg-[var(--fg)]/5 opacity-30"></div>
+
+						{#if initialRender}
+							{#if $isDarkMode}
+								<div
+									class="absolute inset-0 flex items-center justify-center"
+									in:fade={{ duration: 1000, delay: 400, easing: cubicOut }}
+								>
+									<ButtonIcon onclick={toggleMode} icon={Moon} />
+								</div>
+							{:else}
+								<div
+									class="absolute inset-0 flex items-center justify-center"
+									in:fade={{ duration: 1000, delay: 400, easing: cubicOut }}
+								>
+									<ButtonIcon onclick={toggleMode} icon={Sun} />
+								</div>
+							{/if}
+						{/if}
+					</div>
+				</div>
 			</div>
 		</div>
 	{/if}
@@ -234,7 +260,7 @@
 								   transition-all duration-300 ease-out group-hover:w-full
 								   {isAboutActive ? 'opacity-0' : 'opacity-100'}"
 						></span>
-						
+
 						<!-- Active underline for About -->
 						{#if isAboutActive}
 							<span
@@ -288,23 +314,20 @@
 									   border border-[var(--fg)]/10 bg-[var(--bg)] py-2 shadow-lg"
 								transition:fade={{ duration: 200 }}
 							>
-
-							{#if item.subitems && Array.isArray(item.subitems)}
-
-								{#each item.subitems as subitem, i}
-									<a
-										href={subitem.href}
-										on:click={(e) => handleNavClick(e, subitem.href)}
-										class="block px-4 py-2 text-sm hover:bg-[var(--fg)]/10
+								{#if item.subitems && Array.isArray(item.subitems)}
+									{#each item.subitems as subitem, i}
+										<a
+											href={subitem.href}
+											on:click={(e) => handleNavClick(e, subitem.href)}
+											class="block px-4 py-2 text-sm hover:bg-[var(--fg)]/10
 											   {activeSection === subitem.href ? 'text-[var(--primary-accent)]' : 'text-[var(--fg)]'}"
-										in:fade={{ delay: i * 50, duration: 150 }}
-									>
-										{subitem.label}
-									</a>
-								{/each}
-							{/if}
+											in:fade={{ delay: i * 50, duration: 150 }}
+										>
+											{subitem.label}
+										</a>
+									{/each}
+								{/if}
 							</div>
-
 						{/if}
 					{:else}
 						<!-- Regular menu item -->
@@ -339,19 +362,33 @@
 			{/each}
 		</ul>
 
-		<!-- Language Selector and Theme Toggle -->
+		<!-- Desktop Theme Toggle -->
 		<div class="flex items-center space-x-4">
-			<!-- <select
-				class="cursor-pointer appearance-none rounded border bg-transparent px-2 py-1 pr-8 text-[var(--primary-accent)]"
-				on:change={handleLanguageChange}
-				bind:value={currentLanguage}
-			>
-				{#each languages as lang}
-					<option value={lang.code}>{lang.label}</option>
-				{/each}
-			</select> -->
+			<div class="relative flex h-10 w-10 items-center justify-center">
+				<!-- Placeholder circle that's always visible -->
+				<div class="h-8 w-8 rounded-full bg-[var(--fg)]/5 opacity-30"></div>
 
-			<ButtonIcon onclick={toggleMode} icon={$isDarkMode ? MoonStar : Sun} />
+				<!-- Theme toggle with CSS animation instead of Svelte transition -->
+				<div
+					class="theme-button absolute inset-0 flex items-center justify-center {showThemeButton
+						? 'visible'
+						: ''}"
+				>
+					{#if $isDarkMode}
+						<div
+							class="absolute inset-0 flex items-center justify-center"
+						>
+							<ButtonIcon onclick={toggleMode} icon={Moon} />
+						</div>
+					{:else}
+						<div
+							class="absolute inset-0 flex items-center justify-center"
+						>
+							<ButtonIcon onclick={toggleMode} icon={Sun} />
+						</div>
+					{/if}
+				</div>
+			</div>
 		</div>
 	</div>
 </nav>
@@ -378,5 +415,18 @@
 
 	li {
 		animation: fadeIn 0.5s ease-out forwards;
+	}
+
+	.theme-button {
+		opacity: 0;
+		transform: scale(0.8);
+		transition:
+			opacity 0.3s ease,
+			transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+	}
+
+	.theme-button.visible {
+		opacity: 1;
+		transform: scale(1);
 	}
 </style>

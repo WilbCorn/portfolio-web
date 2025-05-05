@@ -86,6 +86,8 @@
     <div id="about-qualifications" class="w-full" use:inView={{ threshold: 0.1, rootMargin: "-30px", once: false }}>
         <SeparatorWavy color="var(--bg)" flipped={false} />
         <Qualifications bg_color="var(--bg)"/>
+        <div style="height: 50px; background-color: var(--bg);"></div>
+        <SeparatorWavy color="var(--bg)" flipped={true} />
     </div>
 </div>
 

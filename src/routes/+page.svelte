@@ -14,7 +14,6 @@
 <SeparatorWavy color="var(--bg-secondary)" spacing=50 />
 <div id="about">
     <AboutMeSection/>
-	<SeparatorWavy color="var(--bg-secondary)" flipped={false} />
 </div>
 
 <div id="projects">
