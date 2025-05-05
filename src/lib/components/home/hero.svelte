@@ -13,7 +13,7 @@
 	let my_name = personalInfo.name;
 
 	// Increase duration to account for all animations
-	const SVG_DURATION = 3000; // 2000ms draw + 1000ms fill
+	const SVG_DURATION = 1000; // 2000ms draw + 1000ms fill
 
 	onMount(() => {
 		isVisible = true;
@@ -60,7 +60,7 @@
 					<!-- SVG Blob -->
 					{#if isVisible}
 					<div class="absolute inset-0 z-0 h-full w-full overflow-visible"
-						transition:fade={{ duration: 1000, delay: 300 }}>
+						transition:fade={{ duration: 500, delay: 100 }}>
 						<svg
 							id="sw-js-blob-svg"
 							viewBox="0 0 100 100"
@@ -92,7 +92,7 @@
 					{#if isSvgFinished}
 					<div 
 						class="relative z-10 h-full w-full"
-						transition:fade={{ duration: 1000 }}
+						transition:fade={{ duration: 500 }}
 					>
 						<img
 							src="/img/profile.png"
@@ -154,8 +154,8 @@
 
 <style>
 	.animate-draw {
-		animation: drawPath 2s ease forwards, 
-				   fillPath 1s ease-in-out forwards 2s;
+		animation: drawPath 0.5s ease forwards, 
+				   fillPath 0.8s ease-in-out forwards 0.5s;
 	}
 
 	@keyframes drawPath {
