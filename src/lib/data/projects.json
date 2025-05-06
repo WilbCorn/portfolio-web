@@ -40,18 +40,22 @@
         "in_resume": true
     },
     {
-        "name": "Document to PDF Converter",
-        "description": "A Python-based tool designed to convert various document formats (including .doc, .docx, .ppt, .pptx, .xls, .xlsx) to PDF. It supports processing individual files, entire directories, and ZIP archives, while preserving directory structures during conversion.",
+        "name": "doc2pdf",
+        "description": "A cross-platform Python-based tool that converts Microsoft Office documents to PDF using LibreOffice. It supports individual files, directories, and ZIP archives, maintaining directory structure in output and offering CLI options for flexibility. The tool optionally copies non-convertible files and supports multithreaded processing for improved performance.",
         "achievements": [
-            "Developed a versatile document conversion tool using Python on Linux, capable of handling multiple file formats.",
-            "Implemented functionality to process files from different sources: individual files, directories, and ZIP archives.",
-            "Ensured preservation of directory structures in the output, enhancing organization and accessibility.",
-            "Addressed formatting limitations inherent in converting Microsoft Office documents to PDF using LibreOffice in a Linux environment.",
-            "Utilized Git and GitHub for version control and collaborative development."
+            "Developed a versatile document conversion tool using Python on Linux, capable of handling multiple file formats including .ppt, .pptx, .doc, .docx, .xls, and .xlsx.",
+            "Implemented functionality to process files from various sources: individual files, directory trees with subdirectories, and ZIP archives.",
+            "Ensured preservation of original directory structures in the output, enhancing organization and user experience.",
+            "Integrated optional multithreading to improve performance during batch conversions, with configurable thread limits.",
+            "Provided flexible configuration through a centralized settings module, allowing users to customize behavior such as file copying and exclusion rules.",
+            "Designed a modular architecture promoting maintainability and scalability, separating concerns into distinct modules (e.g., converters, file utils, conversion logic).",
+            "Created both CLI and GUI interfaces, expanding accessibility and usability for different types of users.",
+            "Built and deployed a Docker image to enable usage without requiring local installation of Python or LibreOffice."
         ],
         "summary_achievements": [
-            "Created a Linux-based Python tool for converting various document formats to PDF.",
-            "Implemented support for processing files from multiple sources while preserving directory structures."
+            "Created a Linux-based Python tool for converting various document formats to PDF while preserving input structure.",
+            "Implemented support for processing files from multiple sources including directories and ZIP archives.",
+            "Offered both CLI and GUI interfaces, along with a Docker image option, to enhance accessibility."
         ],
         "year": "2025",
         "duration": "",
@@ -59,13 +63,19 @@
         "soft_skills_utilized": [
             "Problem-Solving",
             "Attention to Detail",
-            "Adaptability"
+            "Adaptability",
+            "User-Centered Design",
+            "Documentation"
         ],
         "hard_skills_utilized": [
             "Python",
             "Linux",
             "File Handling and Processing",
-            "LibreOffice Integration"
+            "LibreOffice Integration",
+            "Multithreading",
+            "Streamlit",
+            "Docker",
+            "Configuration Management"
         ],
         "images": [],
         "in_resume": true
