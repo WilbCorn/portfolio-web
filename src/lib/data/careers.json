@@ -29,7 +29,6 @@
             "Developed APIs to provide external users with direct, secure access to application features."
         ],
         "technologies": [
-            "HTML, CSS, and JavaScript",
             "Angular",
             "Django",
             "Python",
@@ -78,18 +77,8 @@
                     "year": 2024
                 },
                 "end": {
-                    "month": "February",
+                    "month": "May",
                     "year": 2025
-                }
-            },
-            {
-                "start": {
-                    "month": "April",
-                    "year": 2025
-                },
-                "end": {
-                    "month": "",
-                    "year": ""
                 }
             }
         ],

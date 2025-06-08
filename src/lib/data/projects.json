@@ -141,7 +141,7 @@
             "Artificial Intelligence"
         ],
         "images": [],
-        "in_resume": true
+        "in_resume": false
     },
     {
         "name": "APU Programming Cafe",
@@ -170,7 +170,7 @@
             "Object-Oriented Programming"
         ],
         "images": [],
-        "in_resume": false
+        "in_resume": true
     },
     {
         "name": "Food Ordering System",
