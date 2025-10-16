@@ -12,10 +12,10 @@
         },
         "end": {
             "month": "April",
-            "year": "2025"
+            "year": "2026"
         },
         "score": {
-            "current_cgpa": 3.6,
+            "current_cgpa": 3.67,
             "limit_cgpa": 4.0
         },
         "achievements": [

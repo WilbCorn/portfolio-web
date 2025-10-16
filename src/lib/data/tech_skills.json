@@ -3,57 +3,39 @@
         "category": "Programming Languages",
         "skills": [
             {
-                "name": "Java",
-                "years_of_experience": "",
-                "proficiency": "",
-                "last_used": ""
-            },
-            {
                 "name": "Python",
                 "years_of_experience": "",
                 "proficiency": "Intermediate",
                 "last_used": ""
             },
             {
-                "name": "R",
+                "name": "TypeScript",
                 "years_of_experience": "",
                 "proficiency": "",
-                "last_used": ""
-            },
-            {
-                "name": "C++",
-                "years_of_experience": "",
-                "proficiency": "",
-                "last_used": ""
-            },
-            {
-                "name": "MSSQL",
-                "years_of_experience": "",
-                "proficiency": "",
-                "last_used": ""
-            },
-            {
-                "name": "Svelte",
-                "years_of_experience": "",
-                "proficiency": "",
-                "last_used": ""
-            },
-            {
-                "name": "HTML & CSS",
-                "years_of_experience": "",
-                "proficiency": "",
-                "last_used": ""
+                "last_used": "Intermediate"
             },
             {
                 "name": "JavaScript",
                 "years_of_experience": "",
                 "proficiency": "",
+                "last_used": "Intermediate"
+            },
+            {
+                "name": "Java",
+                "years_of_experience": "",
+                "proficiency": "",
                 "last_used": ""
             },
             {
-                "name": "TypeScript",
+                "name": "SQL",
                 "years_of_experience": "",
-                "proficiency": "",
+                "proficiency": "Intermediate",
+                "last_used": ""
+            },
+            {
+                "name": "HTML & CSS",
+                "years_of_experience": "",
+                "proficiency": "Intermediate",
                 "last_used": ""
             },
             {
@@ -67,28 +49,52 @@
                 "years_of_experience": "",
                 "proficiency": "",
                 "last_used": ""
+            },
+            {
+                "name": "R",
+                "years_of_experience": "",
+                "proficiency": "",
+                "last_used": ""
+            },
+            {
+                "name": "C++",
+                "years_of_experience": "",
+                "proficiency": "",
+                "last_used": ""
             }
         ]
     },
     {
-        "category": "Frameworks",
+        "category": "Frameworks & Libraries",
         "skills": [
+            {
+                "name": "Django (REST Framework, Channels, WebSockets)",
+                "years_of_experience": "",
+                "proficiency": "Intermediate",
+                "last_used": ""
+            },
             {
                 "name": "Next.js",
                 "years_of_experience": "",
-                "proficiency": "",
+                "proficiency": "Intermediate",
                 "last_used": ""
             },
             {
-                "name": "Angular",
+                "name": "React",
+                "years_of_experience": "",
+                "proficiency": "Intermediate",
+                "last_used": ""
+            },
+            {
+                "name": "SvelteKit",
                 "years_of_experience": "",
                 "proficiency": "",
                 "last_used": ""
             },
             {
-                "name": "Django",
+                "name": "Tailwind CSS",
                 "years_of_experience": "",
-                "proficiency": "",
+                "proficiency": "Intermediate",
                 "last_used": ""
             },
             {
@@ -98,19 +104,13 @@
                 "last_used": ""
             },
             {
-                "name": "Expo",
-                "years_of_experience": "",
-                "proficiency": "",
-                "last_used": ""
-            },
-            {
-                "name": "Tailwind CSS",
-                "years_of_experience": "",
-                "proficiency": "",
-                "last_used": ""
-            },
-            {
                 "name": "React Native",
+                "years_of_experience": "",
+                "proficiency": "",
+                "last_used": ""
+            },
+            {
+                "name": "Angular",
                 "years_of_experience": "",
                 "proficiency": "",
                 "last_used": ""
@@ -118,30 +118,18 @@
         ]
     },
     {
-        "category": "Platforms & Tools",
+        "category": "Databases",
         "skills": [
             {
-                "name": "Docker",
+                "name": "PostgreSQL",
                 "years_of_experience": "",
-                "proficiency": "",
+                "proficiency": "Intermediate",
                 "last_used": ""
             },
             {
-                "name": "Github",
+                "name": "MSSQL",
                 "years_of_experience": "",
-                "proficiency": "",
-                "last_used": ""
-            },
-            {
-                "name": "Git",
-                "years_of_experience": "",
-                "proficiency": "",
-                "last_used": ""
-            },
-            {
-                "name": "Gitlab",
-                "years_of_experience": "",
-                "proficiency": "",
+                "proficiency": "Intermediate",
                 "last_used": ""
             },
             {
@@ -149,9 +137,61 @@
                 "years_of_experience": "",
                 "proficiency": "",
                 "last_used": ""
+            }
+        ]
+    },
+    {
+        "category": "DevOps & Cloud",
+        "skills": [
+            {
+                "name": "Docker & Container Orchestration",
+                "years_of_experience": "",
+                "proficiency": "Intermediate",
+                "last_used": ""
+            },
+            {
+                "name": "Azure (DevOps, Container Registry, API Integration)",
+                "years_of_experience": "",
+                "proficiency": "Intermediate",
+                "last_used": ""
+            },
+            {
+                "name": "Git (Github, Gitlab)",
+                "years_of_experience": "",
+                "proficiency": "Intermediate",
+                "last_used": ""
             },
             {
                 "name": "Vercel",
+                "years_of_experience": "",
+                "proficiency": "",
+                "last_used": ""
+            }
+        ]
+    },
+    {
+        "category": "Tools & Technologies",
+        "skills": [
+            {
+                "name": "RESTful APIs & WebSocket Communication",
+                "years_of_experience": "",
+                "proficiency": "Intermediate",
+                "last_used": ""
+            },
+            {
+                "name": "AI Integration",
+                "years_of_experience": "",
+                "proficiency": "Intermediate",
+                "last_used": ""
+            },
+            {
+                "name": "Vite",
+                "years_of_experience": "",
+                "proficiency": "",
+                "last_used": ""
+            },
+            {
+                "name": "Streamlit",
                 "years_of_experience": "",
                 "proficiency": "",
                 "last_used": ""
@@ -164,13 +204,13 @@
             {
                 "name": "Windows",
                 "years_of_experience": "",
-                "proficiency": "",
+                "proficiency": "Intermediate",
                 "last_used": ""
             },
             {
                 "name": "Linux (Fedora)",
                 "years_of_experience": "",
-                "proficiency": "",
+                "proficiency": "Intermediate",
                 "last_used": ""
             }
         ]

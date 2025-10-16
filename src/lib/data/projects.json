@@ -1,5 +1,59 @@
 [
     {
+        "name": "InLancing - AI-Powered Anonymous Freelancing Platform",
+        "description": "A comprehensive full-stack freelancing platform that connects clients with skilled developers through intelligent task-based projects. The platform features AI-powered task generation using Google Gemini, real-time communication via WebSockets, secure milestone-based payments, bid management system, integrated Azure DevOps repository management, and comprehensive notification systems. Built with Django REST Framework and Next.js 15, the system demonstrates advanced full-stack development capabilities with AI integration.",
+        "achievements": [
+            "Designed and developed a complete full-stack freelancing platform with separate frontend and backend services.",
+            "Implemented AI-powered task form generation using Google Gemini 2.5 Flash API to streamline project creation and improve user experience.",
+            "Built robust real-time bidirectional chat functionality using Django Channels and WebSockets.",
+            "Integrated Azure DevOps Git repository management system including automated branch creation, commit tracking, file management, and repository downloads.",
+            "Designed and implemented secure milestone-based payment system with multi-stage approval workflows and comprehensive status tracking.",
+            "Created sophisticated role-based access control system with distinct Client and Freelancer user roles, permissions, and dashboard interfaces.",
+            "Achieved containerized application deployment using Docker with Azure Container Registry integration and orchestration setup.",
+            "Built comprehensive email notification system utilizing Django Templates.",
+            "Developed sophisticated task management system with bidding workflows, acceptance processes, quality reviews, and milestone tracking",
+            "Created responsive, accessible frontend interface using Next.js 15 with TypeScript, React 19, and Tailwind CSS 4 following modern UI/UX principles."
+        ],
+        "summary_achievements": [
+            "Built a full-stack freelancing platform with AI-powered task generation (Google Gemini 2.5), real-time WebSocket chat, and Azure DevOps repository management.",
+            "Implemented milestone-based payment system with multi-stage workflows, bid management, and role-based access control for Clients and Freelancers.",
+            "Developed comprehensive task management system with bidding workflows, acceptance processes, quality reviews, and automated email notifications.",
+            "Achieved containerized deployment with Docker and Azure Container Registry, demonstrating enterprise-grade system design and API integration."
+        ],
+        "year": "2024-2025",
+        "duration": "6 months",
+        "link": "",
+        "soft_skills_utilized": [
+            "System Design",
+            "Problem Solving",
+            "Project Management",
+            "Technical Documentation",
+            "Research & Analysis",
+            "Critical Thinking",
+            "Time Management",
+            "Adaptability",
+            "Communication",
+            "Attention to Detail"
+        ],
+        "hard_skills_utilized": [
+            "Python",
+            "Django (REST Framework, Channels, Templates)",
+            "TypeScript",
+            "Next.js & React",
+            "PostgreSQL",
+            "Docker",
+            "Azure (Container Registry, DevOps API)",
+            "AI Integration (Google Gemini API)",
+            "RESTful APIs & WebSocket Communication",
+            "Git Version Control",
+            "Tailwind CSS",
+            "Authentication & Authorization (JWT, RBAC)",
+            "UI/UX Design"
+        ],
+        "images": [],
+        "in_resume": true
+    },
+    {
         "name": "Portfolio Website",
         "description": "A dynamic and responsive personal website built with SvelteKit and Tailwind CSS to showcase skills, projects, and professional experience. Features seamless light/dark theme switching and engaging animations.",
         "achievements": [
@@ -111,7 +165,7 @@
             "Mobile App Development"
         ],
         "images": [],
-        "in_resume": true
+        "in_resume": false
     },
     {
         "name": "J.I.M",
@@ -170,7 +224,7 @@
             "Object-Oriented Programming"
         ],
         "images": [],
-        "in_resume": true
+        "in_resume": false
     },
     {
         "name": "Food Ordering System",
